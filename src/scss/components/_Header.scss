@@ -1,0 +1,9 @@
+.header {
+  background: $color-background-primary;
+  height: 60px;
+  @include flex();
+
+  @include media("lg") {
+    height: 40px;
+  }
+}

@@ -1,6 +1,15 @@
 .nav {
   &__link {
     display: inline-block;
-    padding: 10px;
+    padding: 14px;
+    border-right: 1px solid #181a1f;
+
+    &--active {
+      background: $color-background-secondary;
+    }
+  }
+
+  &__link:hover {
+    background: $color-background-focus;
   }
 }

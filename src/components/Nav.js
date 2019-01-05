@@ -3,14 +3,14 @@ import React from "react";
 const Nav = () => {
   return (
     <nav className="nav">
-      <a className="nav__link" href="/">
-        Home
+      <a className="nav__link nav__link--active" href="/">
+        About Me
       </a>
       <a className="nav__link" href="/">
-        Portfolio
+        Project Portfolio
       </a>
       <a className="nav__link" href="/">
-        Blog
+        Developer Blog
       </a>
     </nav>
   );

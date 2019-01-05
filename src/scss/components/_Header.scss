@@ -1,9 +1,10 @@
 .header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   background: $color-background-primary;
-  height: 60px;
-  @include flex();
+  width: 100%;
 
   @include media("lg") {
-    height: 40px;
   }
 }

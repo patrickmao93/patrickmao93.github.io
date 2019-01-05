@@ -3,4 +3,10 @@
   display: inline-block;
   background: $color-background-card;
   padding: 20px;
+
+  &__header {
+    h1 {
+      font-size: 2rem;
+    }
+  }
 }

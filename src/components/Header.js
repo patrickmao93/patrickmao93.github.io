@@ -1,13 +1,10 @@
 import React from "react";
 
-import Nav from "./Nav";
-import Topbar from "./Topbar";
-
 const Header = props => {
   return (
     <div className="header">
-      <Topbar />
-      <Nav />
+      <div className="header__img" />
+      <span className="header__title">Patrick Mao</span>
     </div>
   );
 };

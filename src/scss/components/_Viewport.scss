@@ -1,0 +1,7 @@
+.viewport {
+  grid-area: viewport;
+
+  @include media("lg") {
+    @include flex($align: flex-start, $dir: column);
+  }
+}

@@ -242,7 +242,6 @@ body {
 
 .sidebar {
   font-size: 1.6rem;
-  padding: 12px;
   height: 100%;
   background: #333842;
   grid-area: sidebar;
@@ -255,6 +254,17 @@ body {
     flex-wrap: nowrap;
     align-items: center;
   }
+}
+.sidebar__setting {
+  margin-top: auto;
+}
+.sidebar__icon {
+  padding: 12px;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+.sidebar__icon:hover {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */

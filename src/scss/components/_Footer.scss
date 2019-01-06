@@ -5,6 +5,10 @@
   bottom: 0px;
   padding: 6px 14px;
   width: 100%;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   background: $color-background-primary;
+
+  .signal {
+    color: #28a745;
+  }
 }

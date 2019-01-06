@@ -1,0 +1,16 @@
+.intro {
+  font-family: $font-family-secondary;
+  height: 100%;
+  @include flex($dir: column, $just: center);
+
+  &__content {
+    &__img {
+      @include roundy();
+      @include img(279px, 279px);
+      margin-bottom: 50px;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}

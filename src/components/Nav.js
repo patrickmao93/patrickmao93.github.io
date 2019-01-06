@@ -4,7 +4,7 @@ const Nav = () => {
   return (
     <nav className="nav">
       <a className="nav__link nav__link--active" href="/">
-        About Me
+        Welcome
       </a>
       <a className="nav__link" href="/">
         Project Portfolio

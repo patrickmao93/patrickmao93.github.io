@@ -1,4 +1,5 @@
 import React from "react";
+import zhihuIcon from "../icons/zhihu.svg";
 
 const Sidebar = () => {
   return (
@@ -10,7 +11,7 @@ const Sidebar = () => {
         <i className="fab fa-linkedin-in" />
       </a>
       <a className="sidebar__icon" href="/">
-        <img src="../icons\zhihu.svg" alt="zhihu" />
+        <img src={zhihuIcon} alt="zhihu" />
       </a>
       <a className="sidebar__icon sidebar__setting" href="/">
         <i className="fas fa-cog" />

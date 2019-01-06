@@ -1,11 +1,11 @@
 import React from "react";
 import Card from "./Card";
-import Nav from "./Nav";
+import Intro from "./Intro";
 
 const Content = props => {
   return (
     <div className="content">
-      <Card />
+      <Intro />
     </div>
   );
 };

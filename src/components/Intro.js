@@ -1,9 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+import Code from "./Code";
+
 const Intro = props => {
   return (
     <div className="intro">
+      <Code />
       <div className="intro__content">
         <div className="intro__content__img" />
         <div className="intro__content__desc">

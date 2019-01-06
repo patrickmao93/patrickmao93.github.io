@@ -9,10 +9,16 @@ class Line extends React.Component {
 }
 
 class Code extends React.Component {
-  state = {
-    lines: []
-  };
-  componentDidMount() {}
+  ref = React.createRef();
+  componentDidMount() {
+    const spans = [...this.ref.current.children];
+    for (let i = 0; i < spans.length; i++) {
+      setTimeout(() => {
+        spans[i].style.filter = "grayscale(0)";
+        spans[i].style.opacity = 0.2;
+      }, i * 2);
+    }
+  }
 
   generateLines(amount) {
     const colors = ["blue", "purple", "green", "yellow", "white", "red"];
@@ -26,7 +32,11 @@ class Code extends React.Component {
   }
 
   render() {
-    return <div className="code">{this.generateLines(100)}</div>;
+    return (
+      <div ref={this.ref} className="code">
+        {this.generateLines(700)}
+      </div>
+    );
   }
 }
 

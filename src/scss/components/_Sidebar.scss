@@ -2,7 +2,7 @@
   font-size: 1.6rem;
   height: 100%;
   background: $color-background-sidebar;
-
+  color: $color-font-secondary;
   grid-area: sidebar;
 
   @include media("lg") {

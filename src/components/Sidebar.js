@@ -1,5 +1,6 @@
 import React from "react";
 import zhihuIcon from "../icons/zhihu.svg";
+import codewarsIcon from "../icons/codewars.svg";
 
 const Sidebar = () => {
   return (
@@ -12,6 +13,9 @@ const Sidebar = () => {
       </a>
       <a className="sidebar__icon" href="/">
         <img src={zhihuIcon} alt="zhihu" />
+      </a>
+      <a className="sidebar__icon" href="/">
+        <img src={codewarsIcon} alt="codewars" width="25" height="25" />
       </a>
       <a className="sidebar__icon sidebar__setting" href="/">
         <i className="fas fa-cog" />

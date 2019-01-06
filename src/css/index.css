@@ -234,6 +234,7 @@ body {
   flex: 1;
   width: 100%;
   padding: 10px;
+  position: relative;
   color: #abb2bf;
 }
 .content a {
@@ -268,6 +269,7 @@ body {
   font-size: 1.6rem;
   height: 100%;
   background: #333842;
+  color: #abb2bf;
   grid-area: sidebar;
 }
 @media (min-width: 900px) {
@@ -306,6 +308,8 @@ body {
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
+  position: relative;
+  z-index: 1000;
 }
 .intro__content__img {
   overflow: hidden;
@@ -316,39 +320,52 @@ body {
   background: #007acc;
   width: 200px;
   height: 200px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
 .intro__content__desc {
   margin-left: 30px;
+}
+.intro__content__desc h1 {
+  color: white;
+  font-size: 2rem;
+  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.4);
 }
 .intro__content__desc a {
   display: block;
   margin: 6px 0;
 }
-.intro__content h1 {
-  font-size: 2rem;
-}
 
+.code {
+  position: absolute;
+  top: 5;
+  bottom: 10;
+  overflow: hidden;
+  height: 100%;
+}
 .code .line {
-  opacity: 0.4;
+  opacity: 0.1;
   display: inline-block;
   height: 12px;
   border-radius: 6px;
   margin: 4px;
+  transition: 1s ease;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 .code .w-1 {
-  width: 5%;
+  width: 2%;
 }
 .code .w-2 {
-  width: 10%;
+  width: 4%;
 }
 .code .w-3 {
-  width: 15%;
+  width: 6%;
 }
 .code .w-4 {
-  width: 20%;
+  width: 8%;
 }
 .code .w-5 {
-  width: 25%;
+  width: 10%;
 }
 .code .blue {
   background: #61afef;

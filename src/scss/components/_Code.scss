@@ -6,17 +6,25 @@ $white: #abb2a0;
 $red: #e06c62;
 
 .code {
+  position: absolute;
+  top: 5;
+  bottom: 10;
+  overflow: hidden;
+  height: 100%;
   .line {
-    opacity: 0.4;
+    opacity: 0.1;
     display: inline-block;
     height: 12px;
     border-radius: 6px;
     margin: 4px;
+    transition: 1s ease;
+    -webkit-filter: grayscale(1);
+    filter: grayscale(1);
   }
 
   @for $var from 1 through 5 {
     .w-#{$var} {
-      width: #{$var * 5%};
+      width: #{$var * 2%};
     }
   }
 

@@ -18,5 +18,18 @@
         background: $color-background-secondary;
       }
     }
+
+    .fa-js-square {
+      color: orange;
+    }
+
+    .fa-file-code {
+      color: #69c673;
+    }
+
+    span {
+      display: inline-block;
+      margin-left: 8px;
+    }
   }
 }

@@ -3,7 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="footer">
-      <i className="far fa-dot-circle signal" /> Ready for employment
+      <i className="far fa-dot-circle signal" />
+      <span> Job Status: Ready for employment</span>
     </div>
   );
 };

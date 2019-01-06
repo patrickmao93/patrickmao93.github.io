@@ -206,6 +206,16 @@ body {
 .nav__link--active:hover {
   background: #282c34;
 }
+.nav__link .fa-js-square {
+  color: orange;
+}
+.nav__link .fa-file-code {
+  color: #69c673;
+}
+.nav__link span {
+  display: inline-block;
+  margin-left: 8px;
+}
 
 .viewport {
   grid-area: viewport;
@@ -225,6 +235,9 @@ body {
   width: 100%;
   padding: 10px;
   color: #abb2bf;
+}
+.content a {
+  color: #528bff;
 }
 
 .footer {
@@ -309,7 +322,6 @@ body {
 }
 .intro__content__desc a {
   display: block;
-  color: #528bff;
   margin: 6px 0;
 }
 .intro__content h1 {

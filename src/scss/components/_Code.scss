@@ -1,0 +1,41 @@
+$blue: #61afef;
+$purple: #c678dd;
+$green: #89c379;
+$yellow: #e5c07b;
+$white: #abb2a0;
+$red: #e06c62;
+
+.code {
+  .line {
+    opacity: 0.4;
+    display: inline-block;
+    height: 12px;
+    border-radius: 6px;
+    margin: 4px;
+  }
+
+  @for $var from 1 to 6 {
+    .w-#{$var} {
+      width: #{$var * 5%};
+    }
+  }
+
+  .blue {
+    background: $blue;
+  }
+  .purple {
+    background: $purple;
+  }
+  .green {
+    background: $green;
+  }
+  .yellow {
+    background: $yellow;
+  }
+  .white {
+    background: $white;
+  }
+  .red {
+    background: $red;
+  }
+}

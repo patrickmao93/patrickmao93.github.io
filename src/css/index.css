@@ -328,4 +328,45 @@ body {
   font-size: 2rem;
 }
 
+.code .line {
+  opacity: 0.4;
+  display: inline-block;
+  height: 12px;
+  border-radius: 6px;
+  margin: 4px;
+}
+.code .w-1 {
+  width: 5%;
+}
+.code .w-2 {
+  width: 10%;
+}
+.code .w-3 {
+  width: 15%;
+}
+.code .w-4 {
+  width: 20%;
+}
+.code .w-5 {
+  width: 25%;
+}
+.code .blue {
+  background: #61afef;
+}
+.code .purple {
+  background: #c678dd;
+}
+.code .green {
+  background: #89c379;
+}
+.code .yellow {
+  background: #e5c07b;
+}
+.code .white {
+  background: #abb2a0;
+}
+.code .red {
+  background: #e06c62;
+}
+
 /*# sourceMappingURL=index.css.map */

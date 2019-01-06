@@ -1,13 +1,22 @@
 .intro {
   font-family: $font-family-secondary;
+  @include flex($just: center);
   height: 100%;
-  @include flex($dir: column, $just: center);
 
   &__content {
+    @include flex($just: center);
     &__img {
       @include roundy();
-      @include img(279px, 279px);
-      margin-bottom: 50px;
+      @include img(200px, 200px);
+    }
+    &__desc {
+      margin-left: 30px;
+
+      a {
+        display: block;
+        color: $color-font-link;
+        margin: 6px 0;
+      }
     }
     h1 {
       font-size: 2rem;

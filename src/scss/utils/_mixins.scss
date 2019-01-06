@@ -26,7 +26,6 @@
 
 @mixin img($w: 50px, $h: 50px, $color: #007acc) {
   background: $color;
-  display: inline-block;
   width: $w;
   height: $h;
 }

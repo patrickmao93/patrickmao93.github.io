@@ -6,12 +6,17 @@
     padding: 14px;
     border-right: 1px solid #181a1f;
 
-    &--active {
-      background: $color-background-secondary;
+    &:hover {
+      background: $color-background-focus;
     }
-  }
 
-  &__link:hover {
-    background: $color-background-focus;
+    &--active {
+      color: $color-font-highlight;
+      background: $color-background-secondary;
+
+      &:hover {
+        background: $color-background-secondary;
+      }
+    }
   }
 }

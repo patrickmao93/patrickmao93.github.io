@@ -1,12 +1,12 @@
 .header {
   background: $color-background-primary;
   width: 100%;
-  padding: 10px;
+  padding: 6px;
   grid-area: header;
   @include flex();
 
   &__img {
-    @include img(25px, 25px);
+    @include img(20px, 20px);
   }
 
   &__title {

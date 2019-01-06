@@ -137,6 +137,10 @@ table {
   font-family: Segoe UI;
   src: url(../fonts/segoeui.ttf);
 }
+@font-face {
+  font-family: Segoe UI Italic;
+  src: url(../fonts/segoeui_italic.ttf);
+}
 * {
   font-size: 16px;
   box-sizing: border-box;
@@ -167,7 +171,7 @@ body {
 .header {
   background: #21252b;
   width: 100%;
-  padding: 10px;
+  padding: 6px;
   grid-area: header;
   display: flex;
   flex-direction: row;
@@ -177,9 +181,8 @@ body {
 }
 .header__img {
   background: #007acc;
-  display: inline-block;
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 .header__title {
   margin-left: 15px;
@@ -193,11 +196,15 @@ body {
   padding: 14px;
   border-right: 1px solid #181a1f;
 }
-.nav__link--active {
-  background: #282c34;
-}
 .nav__link:hover {
   background: #383b41;
+}
+.nav__link--active {
+  color: white;
+  background: #282c34;
+}
+.nav__link--active:hover {
+  background: #282c34;
 }
 
 .viewport {
@@ -273,9 +280,16 @@ body {
 
 .intro {
   font-family: "Consola", sans-serif;
-  height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100%;
+}
+.intro__content {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
@@ -287,10 +301,16 @@ body {
   height: auto;
   border-radius: 50%;
   background: #007acc;
-  display: inline-block;
-  width: 279px;
-  height: 279px;
-  margin-bottom: 50px;
+  width: 200px;
+  height: 200px;
+}
+.intro__content__desc {
+  margin-left: 30px;
+}
+.intro__content__desc a {
+  display: block;
+  color: #528bff;
+  margin: 6px 0;
 }
 .intro__content h1 {
   font-size: 2rem;

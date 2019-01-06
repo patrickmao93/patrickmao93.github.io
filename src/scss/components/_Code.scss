@@ -14,7 +14,7 @@ $red: #e06c62;
     margin: 4px;
   }
 
-  @for $var from 1 to 6 {
+  @for $var from 1 through 5 {
     .w-#{$var} {
       width: #{$var * 5%};
     }

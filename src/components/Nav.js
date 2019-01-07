@@ -18,7 +18,7 @@ const Nav = () => {
         activeClassName="nav__link--active"
         exact
       >
-        <i className="fab fa-js-square" />
+        <i className="fas fa-folder-open" />
         <span>Project Portfolio</span>
       </NavLink>
       <NavLink
@@ -27,7 +27,7 @@ const Nav = () => {
         activeClassName="nav__link--active"
         exact
       >
-        <i className="fas fa-file-code" />
+        <i className="fas fa-file-alt" />
         <span>Resume</span>
       </NavLink>
     </nav>

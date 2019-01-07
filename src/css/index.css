@@ -160,6 +160,26 @@ body {
   color: #99a0af;
 }
 
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #282c34;
+  border-left: 1px solid #474a4f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3b414d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #414855;
+}
+
 .app {
   height: 100vh;
   display: grid;
@@ -195,6 +215,7 @@ body {
   display: inline-block;
   padding: 14px;
   border-right: 1px solid #181a1f;
+  transition: background 0.2s ease;
 }
 .nav__link:hover {
   background: #383b41;
@@ -206,10 +227,10 @@ body {
 .nav__link--active:hover {
   background: #282c34;
 }
-.nav__link .fa-js-square {
+.nav__link .fa-folder-open {
   color: orange;
 }
-.nav__link .fa-file-code {
+.nav__link .fa-file-alt {
   color: #69c673;
 }
 .nav__link span {
@@ -231,10 +252,11 @@ body {
 }
 
 .content {
-  flex: 1;
   width: 100%;
+  height: calc(100vh - 101px);
   padding: 10px;
   position: relative;
+  overflow: auto;
   color: #abb2bf;
 }
 .content a {
@@ -256,13 +278,32 @@ body {
 }
 
 .card {
-  font-family: "Consola", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   display: inline-block;
   background: #20232a;
   padding: 20px;
+  width: 300px;
+  margin: 10px;
+  border: 1px solid transparent;
+  transition: border 0.2s ease;
 }
-.card__header h1 {
-  font-size: 2rem;
+.card:hover {
+  border: 1px solid #203dbd;
+}
+.card__header {
+  margin-bottom: 10px;
+}
+.card__header h2 {
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+.card__content {
+  margin-bottom: 10px;
+}
+.card__content .img {
+  background: #282c34;
+  width: auto;
+  height: 160px;
 }
 
 .sidebar {
@@ -271,6 +312,11 @@ body {
   background: #333842;
   color: #abb2bf;
   grid-area: sidebar;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 @media (min-width: 900px) {
   .sidebar {
@@ -320,7 +366,7 @@ body {
   background: #007acc;
   width: 200px;
   height: 200px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .intro__content__desc {
   margin-left: 30px;
@@ -328,17 +374,31 @@ body {
 .intro__content__desc h1 {
   color: white;
   font-size: 2rem;
-  text-shadow: 5px 5px 1px rgba(0, 0, 0, 0.4);
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
 }
 .intro__content__desc a {
   display: block;
   margin: 6px 0;
 }
 
+.portfolio .section__header h1 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+.portfolio .section__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
 .code {
   position: absolute;
   top: 5;
   bottom: 10;
+  padding: 5px;
   overflow: hidden;
   height: 100%;
 }
@@ -384,6 +444,27 @@ body {
 }
 .code .red {
   background: #e06c62;
+}
+
+.portfolio .section__header h1 {
+  color: white;
+  font-size: 1.2rem;
+  margin: 10px;
+}
+.portfolio .section__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.divider {
+  height: 0px;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #2c313a;
 }
 
 /*# sourceMappingURL=index.css.map */

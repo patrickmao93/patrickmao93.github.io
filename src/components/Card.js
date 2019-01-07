@@ -3,16 +3,9 @@ import React from "react";
 const Card = props => {
   return (
     <div className="card">
-      <div className="card__header">
-        <h1>Hi! I'm Patrick,</h1>
-        <h1>a web developer</h1>
-      </div>
-      <div className="card__content">
-        <p>Something LUL</p>
-      </div>
-      <div className="card__footer">
-        <p>Something else LOL</p>
-      </div>
+      <div className="card__header">{props.header}</div>
+      <div className="card__content">{props.content}</div>
+      <div className="card__footer">{props.footer}</div>
     </div>
   );
 };

@@ -4,6 +4,7 @@
   background: $color-background-sidebar;
   color: $color-font-secondary;
   grid-area: sidebar;
+  @include flex($dir: column);
 
   @include media("lg") {
     @include flex($dir: column);

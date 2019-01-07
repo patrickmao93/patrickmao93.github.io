@@ -29,3 +29,23 @@ body {
   font-family: $font-family-primary;
   color: $color-font-primary;
 }
+
+::-webkit-scrollbar {
+  width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $color-background-secondary;
+  border-left: 1px solid #474a4f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3b414d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #414855;
+}

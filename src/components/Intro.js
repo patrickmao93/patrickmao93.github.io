@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Code from "./Code";
+import Code from "./widgets/Code";
 
 const Intro = props => {
   return (
@@ -14,10 +14,10 @@ const Intro = props => {
           <h1>I'm Patrick,</h1>
           <h1>A web developer</h1>
           <Link to="/portfolio" className="link">
-            Project Portfolio
+            Check out my projects
           </Link>
           <Link to="/resume" className="link">
-            View My Resume
+            View my resume
           </Link>
         </div>
       </div>

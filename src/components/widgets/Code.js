@@ -15,7 +15,7 @@ class Code extends React.Component {
     for (let i = 0; i < spans.length; i++) {
       setTimeout(() => {
         spans[i].style.filter = "grayscale(0)";
-        spans[i].style.opacity = 0.2;
+        spans[i].style.opacity = 0.4;
       }, i * 2);
     }
   }

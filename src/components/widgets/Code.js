@@ -15,12 +15,10 @@ class Code extends React.Component {
     for (let i = 0; i < spans.length; i++) {
       setTimeout(() => {
         spans[i].style.opacity = 0.4;
-      }, i * 1.5);
-    }
-    for (let i = 0; i < spans.length; i++) {
+      }, i * 3);
       setTimeout(() => {
         spans[i].style.filter = "grayscale(0)";
-      }, (spans.length - i - 1) * 1.5);
+      }, (spans.length - i - 1) * 3);
     }
   }
 
@@ -38,7 +36,7 @@ class Code extends React.Component {
   render() {
     return (
       <div ref={this.ref} className="code">
-        {this.generateLines(300)}
+        {this.generateLines(320)}
       </div>
     );
   }

@@ -4,6 +4,8 @@
   height: 100%;
 
   &__content {
+    padding: 50px;
+    background: rgba($color: $color-background-card, $alpha: 0.8);
     @include flex($just: center);
     position: relative;
     z-index: 1000;

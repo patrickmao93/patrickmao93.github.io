@@ -349,6 +349,8 @@ body {
   height: 100%;
 }
 .intro__content {
+  padding: 50px;
+  background: rgba(32, 35, 42, 0.8);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -405,9 +407,9 @@ body {
 .code .line {
   opacity: 0.2;
   display: inline-block;
-  height: 12px;
-  border-radius: 6px;
-  margin: 4px;
+  height: 14px;
+  border-radius: 5px;
+  margin: 10px;
   transition: 1s ease;
   -webkit-filter: grayscale(1);
   filter: grayscale(1);

@@ -15,6 +15,6 @@ const Content = props => {
       </Switch>
     </div>
   );
-};
+}; 
 
 export default Content;

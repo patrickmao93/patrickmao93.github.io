@@ -5,16 +5,20 @@ import Intro from "./Intro";
 import Portfolio from "./Portfolio";
 import Resume from "./Resume";
 
-const Content = props => {
-  return (
-    <div className="content">
-      <Switch>
-        <Route path="/" exact component={Intro} />
-        <Route path="/portfolio" exact component={Portfolio} />
-        <Route path="/resume" exact component={Resume} />
-      </Switch>
-    </div>
-  );
-}; 
+class Content extends React.Component {
+  ref = React.createRef();
+
+  render() {
+    return (
+      <div ref={this.ref} className="content">
+        <Switch>
+          <Route path="/" exact component={Intro} />
+          <Route path="/portfolio" exact component={Portfolio} />
+          <Route path="/resume" exact component={Resume} />
+        </Switch>
+      </div>
+    );
+  }
+}
 
 export default Content;

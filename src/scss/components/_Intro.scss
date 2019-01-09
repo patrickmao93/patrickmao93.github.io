@@ -2,17 +2,21 @@
   font-family: $font-family-secondary;
   @include flex($just: center);
   height: 100%;
-
+  perspective: 1000px;
   &__content {
-    padding: 50px;
+    padding: 50px 100px 50px 80px;
     background: rgba($color: $color-background-card, $alpha: 0.8);
     @include flex($just: center);
     position: relative;
+    margin-right: 20%;
     z-index: 1000;
+    box-shadow: 0 70px 63px -60px rgba($color: #000000, $alpha: 0.5);
+    // transform-style: preserve-3d;
     &__img {
       @include roundy();
       @include img(200px, 200px);
-      box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.2);
+      // box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.2);
+      // transform: translateZ(20px);
     }
     &__desc {
       margin-left: 30px;
@@ -20,7 +24,8 @@
       h1 {
         color: white;
         font-size: 2rem;
-        text-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.2);
+        // text-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.2);
+        // transform: translateZ(10px);
       }
 
       a {

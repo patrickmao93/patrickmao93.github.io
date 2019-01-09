@@ -23,6 +23,10 @@
   &__content {
     margin-bottom: 10px;
     .img {
+      img {
+        width: 100%;
+        height: auto;
+      }
       @include img(auto, 160px, #282c34);
     }
   }

@@ -28,6 +28,7 @@
   background: $color;
   width: $w;
   height: $h;
+  overflow: hidden;
 }
 
 @mixin roundy($dia: auto) {

@@ -203,6 +203,7 @@ body {
   background: #007acc;
   width: 20px;
   height: 20px;
+  overflow: hidden;
 }
 .header__title {
   margin-left: 15px;
@@ -304,6 +305,11 @@ body {
   background: #282c34;
   width: auto;
   height: 160px;
+  overflow: hidden;
+}
+.card__content .img img {
+  width: 100%;
+  height: auto;
 }
 
 .sidebar {
@@ -347,9 +353,10 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   height: 100%;
+  perspective: 1000px;
 }
 .intro__content {
-  padding: 50px;
+  padding: 50px 100px 50px 80px;
   background: rgba(32, 35, 42, 0.8);
   display: flex;
   flex-direction: row;
@@ -357,7 +364,9 @@ body {
   flex-wrap: nowrap;
   align-items: center;
   position: relative;
+  margin-right: 20%;
   z-index: 1000;
+  box-shadow: 0 70px 63px -60px rgba(0, 0, 0, 0.5);
 }
 .intro__content__img {
   overflow: hidden;
@@ -368,7 +377,7 @@ body {
   background: #007acc;
   width: 200px;
   height: 200px;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 .intro__content__desc {
   margin-left: 30px;
@@ -376,7 +385,6 @@ body {
 .intro__content__desc h1 {
   color: white;
   font-size: 2rem;
-  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.2);
 }
 .intro__content__desc a {
   display: block;

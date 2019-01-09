@@ -5,9 +5,62 @@ import Card from "./Card";
 import Divider from "./widgets/Divider";
 import employeeDirectoryPNG from "../media/employee-directory.png";
 import chartPNG from "../media/chart.png";
-import gamePNG from "../media/game.png";
+import guessThePhrasePNG from "../media/game.png";
 import galleryPNG from "../media/gallery.png";
 import ccoPNG from "../media/cco.png";
+
+const portfolioCases = {
+  CCO: {
+    header: "Purdue University Center for Career Opportunity V4 website",
+    imgUrl: ccoPNG,
+    tabInfo: {
+      name: "PurdueCCO Site",
+      to: "/portfolio/CCO",
+      icon: "",
+      closable: true
+    }
+  },
+  employeeDirectory: {
+    header: "Employee Directory",
+    imgUrl: employeeDirectoryPNG,
+    tabInfo: {
+      name: "Employee Directory",
+      to: "/portfolio/employee-directory",
+      icon: "",
+      closable: true
+    }
+  },
+  chartApp: {
+    header: "Chart App",
+    imgUrl: chartPNG,
+    tabInfo: {
+      name: "Chart App",
+      to: "/portfolio/chart-app",
+      icon: "",
+      closable: true
+    }
+  },
+  guessThePhrase: {
+    header: "Guess The Phrase!",
+    imgUrl: guessThePhrasePNG,
+    tabInfo: {
+      name: "Guess The Phrase!",
+      to: "/portfolio/guess-the-phrase",
+      icon: "",
+      closable: true
+    }
+  },
+  photoGallery: {
+    header: "A Responsive Photo Gallery",
+    imgUrl: galleryPNG,
+    tabInfo: {
+      name: "A Reponsive Photo Gallery",
+      to: "/portfolio/a-responsive-photo-gallery",
+      icon: "",
+      closable: true
+    }
+  }
+};
 
 const Portfolio = props => {
   return (
@@ -18,21 +71,12 @@ const Portfolio = props => {
         </div>
         <div className="section__content">
           <Link
-            to="/portfolio/CCO"
-            onClick={() => props.onClickCase("/portfolio/CCO")}
+            to={portfolioCases.CCO.tabInfo.to}
+            onClick={() => props.onClickCase(portfolioCases.CCO.tabInfo)}
           >
             <Card
-              header={
-                <h2>
-                  Purdue University Center for Career Opportunity V4 website
-                </h2>
-              }
-              content={
-                <div className="img">
-                  <img src={ccoPNG} alt="Purdue CCO Site" />
-                </div>
-              }
-              footer={<span>Production site</span>}
+              header={portfolioCases.CCO.header}
+              imgUrl={portfolioCases.CCO.imgUrl}
             />
           </Link>
         </div>
@@ -45,42 +89,51 @@ const Portfolio = props => {
           </h1>
         </div>
         <div className="section__content">
-          <Card
-            header={<h2>Employee Directory</h2>}
-            content={
-              <div className="img">
-                <img src={employeeDirectoryPNG} alt="employee directory" />
-              </div>
+          <Link
+            to={portfolioCases.employeeDirectory.tabInfo.to}
+            onClick={() =>
+              props.onClickCase(portfolioCases.employeeDirectory.tabInfo)
             }
-            footer={<a href="/">Github</a>}
-          />
-          <Card
-            header={<h2>Chart App</h2>}
-            content={
-              <div className="img">
-                <img src={chartPNG} alt="chart app" />
-              </div>
+          >
+            <Card
+              header={portfolioCases.employeeDirectory.header}
+              imgUrl={portfolioCases.employeeDirectory.imgUrl}
+            />
+          </Link>
+
+          <Link
+            to={portfolioCases.chartApp.tabInfo.to}
+            onClick={() => props.onClickCase(portfolioCases.chartApp.tabInfo)}
+          >
+            <Card
+              header={portfolioCases.chartApp.header}
+              imgUrl={portfolioCases.chartApp.imgUrl}
+            />
+          </Link>
+
+          <Link
+            to={portfolioCases.guessThePhrase.tabInfo.to}
+            onClick={() =>
+              props.onClickCase(portfolioCases.guessThePhrase.tabInfo)
             }
-            footer={<a href="/">Github</a>}
-          />
-          <Card
-            header={<h2>Guess The Phrase!</h2>}
-            content={
-              <div className="img">
-                <img src={gamePNG} alt="Guess the Phrase!" />
-              </div>
+          >
+            <Card
+              header={portfolioCases.guessThePhrase.header}
+              imgUrl={portfolioCases.guessThePhrase.imgUrl}
+            />
+          </Link>
+
+          <Link
+            to={portfolioCases.photoGallery.tabInfo.to}
+            onClick={() =>
+              props.onClickCase(portfolioCases.photoGallery.tabInfo)
             }
-            footer={<a href="/">Github</a>}
-          />
-          <Card
-            header={<h2>An Interactive Photo Gallery</h2>}
-            content={
-              <div className="img">
-                <img src={galleryPNG} alt="Gallery" />
-              </div>
-            }
-            footer={<a href="/">Github</a>}
-          />
+          >
+            <Card
+              header={portfolioCases.photoGallery.header}
+              imgUrl={portfolioCases.photoGallery.imgUrl}
+            />
+          </Link>
         </div>
       </div>
     </div>

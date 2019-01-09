@@ -6,12 +6,26 @@ import Content from "./Content";
 
 class Viewport extends React.Component {
   state = {
-    tabs: [{ to: "/" }, { to: "/portfolio" }, { to: "/resume" }]
+    tabs: [
+      { to: "/", name: "Welcome", icon: "", closable: false },
+      {
+        to: "/portfolio",
+        name: "Project Portfolio",
+        icon: "fas fa-folder-open",
+        closable: false
+      },
+      {
+        to: "/resume",
+        name: "Resume",
+        icon: "fas fa-file-alt",
+        closable: false
+      }
+    ]
   };
 
-  onClickCase = route => {
-    if (!this.state.tabs.find(tab => tab.to === route)) {
-      this.setState({ tabs: [...this.state.tabs, { to: route }] });
+  onClickCase = newTab => {
+    if (!this.state.tabs.find(tab => tab.to === newTab.to)) {
+      this.setState({ tabs: [...this.state.tabs, newTab] });
     }
   };
 

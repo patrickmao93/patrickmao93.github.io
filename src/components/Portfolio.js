@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import Card from "./Card";
 import Divider from "./widgets/Divider";
@@ -16,19 +17,24 @@ const Portfolio = props => {
           <h1>Projects I participated in</h1>
         </div>
         <div className="section__content">
-          <Card
-            header={
-              <h2>
-                Purdue University Center for Career Opportunity V4 website
-              </h2>
-            }
-            content={
-              <div className="img">
-                <img src={ccoPNG} alt="Purdue CCO Site" />
-              </div>
-            }
-            footer={<a href="/">Production site</a>}
-          />
+          <Link
+            to="/portfolio/CCO"
+            onClick={() => props.onClickCase("/portfolio/CCO")}
+          >
+            <Card
+              header={
+                <h2>
+                  Purdue University Center for Career Opportunity V4 website
+                </h2>
+              }
+              content={
+                <div className="img">
+                  <img src={ccoPNG} alt="Purdue CCO Site" />
+                </div>
+              }
+              footer={<span>Production site</span>}
+            />
+          </Link>
         </div>
       </div>
       <Divider />

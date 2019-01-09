@@ -4,7 +4,6 @@
   &__link {
     display: inline-block;
     padding: 14px;
-    border-right: 1px solid #181a1f;
     transition: background 0.2s ease;
 
     &:hover {
@@ -27,11 +26,12 @@
 
     &--active {
       color: $color-font-highlight;
-      background: $color-background-secondary;
+      // background: $color-background-secondary;
+      border-bottom: 1px solid $color-primary;
 
-      &:hover {
-        background: $color-background-secondary;
-      }
+      // &:hover {
+      //   background: $color-background-secondary;
+      // }
 
       .fa-times {
         opacity: 0.5;

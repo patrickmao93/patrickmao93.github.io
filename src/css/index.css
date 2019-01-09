@@ -215,7 +215,6 @@ body {
 .nav__link {
   display: inline-block;
   padding: 14px;
-  border-right: 1px solid #181a1f;
   transition: background 0.2s ease;
 }
 .nav__link:hover .fa-times {
@@ -231,10 +230,7 @@ body {
 }
 .nav__link--active {
   color: white;
-  background: #282c34;
-}
-.nav__link--active:hover {
-  background: #282c34;
+  border-bottom: 1px solid #007acc;
 }
 .nav__link--active .fa-times {
   opacity: 0.5;
@@ -297,11 +293,14 @@ body {
   padding: 20px;
   width: 300px;
   margin: 10px;
-  border: 1px solid transparent;
-  transition: border 0.2s ease;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+  border-radius: 2px;
 }
 .card:hover {
-  border: 1px solid #203dbd;
+  border-top: 2px solid rgba(0, 122, 204, 0.6);
+  box-shadow: 0 4px 20px -5px rgba(0, 0, 0, 0.4);
+  transform: translateY(-3px);
 }
 .card__header {
   margin-bottom: 10px;
@@ -314,6 +313,7 @@ body {
   margin-bottom: 10px;
 }
 .card__content .img {
+  border-radius: 2px;
   background: #282c34;
   width: auto;
   height: 160px;
@@ -378,6 +378,7 @@ body {
   position: relative;
   margin-right: 20%;
   z-index: 1000;
+  border-left: 4px solid #007acc;
   box-shadow: 0 70px 63px -60px rgba(0, 0, 0, 0.5);
 }
 .intro__content__img {

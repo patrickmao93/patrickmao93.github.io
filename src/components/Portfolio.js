@@ -11,7 +11,7 @@ import ccoPNG from "../media/cco.png";
 
 const portfolioCases = {
   CCO: {
-    header: "Purdue University Center for Career Opportunity V4 website",
+    header: "Purdue University - Center for Career Opportunities Website V4",
     imgUrl: ccoPNG,
     tabInfo: {
       name: "PurdueCCO Site",

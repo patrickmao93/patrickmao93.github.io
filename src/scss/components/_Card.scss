@@ -6,11 +6,14 @@
   padding: 20px;
   width: 300px;
   margin: 10px;
-  border: 1px solid transparent;
-  transition: border 0.2s ease;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+  border-radius: 2px;
 
   &:hover {
-    border: 1px solid #203dbd;
+    border-top: 2px solid rgba($color: $color-primary, $alpha: 0.6);
+    box-shadow: 0 4px 20px -5px rgba($color: #000000, $alpha: 0.4);
+    transform: translateY(-3px);
   }
 
   &__header {
@@ -24,6 +27,7 @@
   &__content {
     margin-bottom: 10px;
     .img {
+      border-radius: 2px;
       img {
         width: 100%;
         height: auto;

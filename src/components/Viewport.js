@@ -33,11 +33,13 @@ class Viewport extends React.Component {
 
   onClickClose = tabToClose => {
     const updatedTabs = this.state.tabs.filter(tab => tab.to !== tabToClose.to);
-    this.setState({ tabs: updatedTabs });
-
-    if (history.location.pathname === tabToClose.to) {
-      history.goBack();
-    }
+    this.setState({ tabs: updatedTabs }, () => {
+      //if user is currently at the tab to be removed
+      if (history.location.pathname === tabToClose.to) {
+        //go to next tab on left hand side
+        history.push(this.state.tabs[this.state.tabs.length - 1].to);
+      }
+    });
   };
 
   render() {

@@ -15,7 +15,7 @@ class CaseProvider extends React.Component {
       imgUrl: ccoPNG,
       tabInfo: {
         name: "PurdueCCO Site",
-        to: "/portfolio/CCO",
+        to: "/portfolio/cco",
         icon: "",
         closable: true
       }

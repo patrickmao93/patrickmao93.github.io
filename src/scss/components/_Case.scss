@@ -1,0 +1,27 @@
+.case {
+  padding: 10px;
+  &__header {
+    margin-bottom: 30px;
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+  }
+  &__content {
+    &__summary,
+    &__feature {
+      margin-bottom: 30px;
+    }
+    &__summary {
+    }
+    &__feature {
+      @include flex($align: flex-start);
+      &__img {
+        @include img(350px, 200px);
+        margin-right: 30px;
+      }
+      &__description {
+      }
+    }
+  }
+}

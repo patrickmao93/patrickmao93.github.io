@@ -151,6 +151,17 @@ a {
   color: inherit;
 }
 
+p {
+  line-height: 1.6;
+}
+
+em {
+  display: inline-block;
+  padding: 0 6px;
+  background: #f3f4f4;
+  font-family: "Consola", sans-serif;
+}
+
 body {
   background: white;
 }
@@ -167,17 +178,17 @@ body {
 /* Track */
 ::-webkit-scrollbar-track {
   background: white;
-  border-left: 1px solid #474a4f;
+  border-left: 1px solid #efefef;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #3b414d;
+  background: #efefef;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #414855;
+  background: #e2e2e2;
 }
 
 .app {
@@ -489,6 +500,34 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1px solid #efefef;
+}
+
+.case {
+  padding: 10px;
+}
+.case__header {
+  margin-bottom: 30px;
+}
+.case__header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.case__content__summary, .case__content__feature {
+  margin-bottom: 30px;
+}
+.case__content__feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+}
+.case__content__feature__img {
+  background: #007acc;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  margin-right: 30px;
 }
 
 /*# sourceMappingURL=index.css.map */

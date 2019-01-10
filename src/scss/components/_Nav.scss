@@ -4,7 +4,8 @@
   &__link {
     display: inline-block;
     padding: 14px;
-    transition: background 0.2s ease;
+    transition: 0.2s ease;
+    border-bottom: 1px solid transparent;
 
     &:hover {
       .fa-times {
@@ -17,6 +18,9 @@
     }
 
     &__content {
+      span {
+        margin: 0 8px;
+      }
       .fa-times {
         margin-left: 5px;
         font-size: 0.8em;
@@ -46,9 +50,9 @@
       color: #69c673;
     }
 
-    span {
-      display: inline-block;
-      margin-left: 8px;
-    }
+    // span {
+    //   display: inline-block;
+    //   margin-left: 8px;
+    // }
   }
 }

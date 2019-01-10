@@ -1,13 +1,21 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-const renderCloseIcon = tab => {
+const renderCloseIcon = (tab, onClickClose) => {
   if (tab.closable) {
-    return <i className="fas fa-times" />;
+    return (
+      <i
+        onClick={e => {
+          e.preventDefault();
+          onClickClose(tab);
+        }}
+        className="fas fa-times"
+      />
+    );
   }
 };
 
-const renderTabs = tabs => {
+const renderTabs = ({ tabs, onClickClose }) => {
   return tabs.map(tab => (
     <NavLink
       key={tab.to}
@@ -19,15 +27,17 @@ const renderTabs = tabs => {
       <span className="nav__link__content">
         <i className={tab.icon} />
         <span>
-          {tab.name} {renderCloseIcon(tab)}
+          {tab.name} {renderCloseIcon(tab, onClickClose)}
         </span>
       </span>
     </NavLink>
   ));
 };
 
-const Nav = props => {
-  return <nav className="nav">{renderTabs(props.tabs)}</nav>;
-};
+class Nav extends React.Component {
+  render() {
+    return <nav className="nav">{renderTabs(this.props)}</nav>;
+  }
+}
 
 export default Nav;

@@ -3,15 +3,18 @@ import Header from "./Header";
 import Footer from "./Footer";
 import Viewport from "./Viewport";
 import Sidebar from "./Sidebar";
+import CaseProvider from "./providers/CaseProvider";
 
 const App = () => {
   return (
-    <div className="app">
-      <Header />
-      <Sidebar />
-      <Viewport />
-      <Footer />
-    </div>
+    <CaseProvider>
+      <div className="app">
+        <Header />
+        <Sidebar />
+        <Viewport />
+        <Footer />
+      </div>
+    </CaseProvider>
   );
 };
 

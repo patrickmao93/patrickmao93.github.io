@@ -3,10 +3,11 @@
   color: $color-font-secondary;
   display: inline-block;
   background: $color-background-card;
+  border-top: 2px solid transparent;
+  border-radius: 4px 4px 0 0;
   padding: 20px;
   width: 300px;
   margin: 10px;
-  border: 2px solid transparent;
   transition: 0.2s ease;
   border-radius: 2px;
 

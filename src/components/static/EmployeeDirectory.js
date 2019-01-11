@@ -5,10 +5,11 @@ const EmployeeDirectory = () => {
     <div className="case">
       <div className="case__header">
         <h1>Employee Directory App</h1>
-        <span>
+
+        <a href="https://github.com/patrickmao93/techdegree-project-8">
           <i className="fab fa-github" />
-          <span>View on Github</span>
-        </span>
+          View on Github
+        </a>
       </div>
       <div className="case__content">
         <p className="case__content__summary">

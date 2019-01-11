@@ -36,6 +36,12 @@ body {
   background: $color-background-secondary;
 }
 
+.fa,
+.fab,
+.fas {
+  margin-right: 5px;
+}
+
 #root {
   font-family: $font-family-primary;
   color: $color-font-primary;

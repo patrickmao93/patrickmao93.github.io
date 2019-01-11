@@ -1,5 +1,11 @@
 import React from "react";
 
+import Pill from "./widgets/Pill";
+
+const renderPills = pills => {
+  return pills.map(pill => <Pill key={pill} type={pill} />);
+};
+
 const Card = props => {
   return (
     <div className="card">
@@ -10,6 +16,7 @@ const Card = props => {
         <div className="img">
           <img src={props.imgUrl} alt={props.header} />
         </div>
+        {renderPills(props.pills)}
       </div>
     </div>
   );

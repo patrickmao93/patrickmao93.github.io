@@ -1,0 +1,36 @@
+.pill {
+  color: white;
+  border-radius: 11px;
+  font-size: 12px;
+  padding: 4px 10px;
+  display: inline-block;
+  min-width: 30px;
+  text-align: center;
+  margin-right: 8px;
+  margin-bottom: 8px;
+  opacity: 0.7;
+  &-js {
+    background: #eed95a;
+  }
+  &-sass {
+    background: #c86398;
+  }
+  &-react {
+    background: #72ddfa;
+  }
+  &-redux {
+    background: #754cb9;
+  }
+  &-bootstrap {
+    background: #553d7b;
+  }
+  &-backbone {
+    background: #2274b3;
+  }
+  &-asp {
+    background: #2d336c;
+  }
+  &-chartjs {
+    background: #f86f7d;
+  }
+}

@@ -168,7 +168,8 @@ body {
 
 .fa,
 .fab,
-.fas {
+.fas,
+.far {
   margin-right: 5px;
 }
 
@@ -307,6 +308,7 @@ body {
   font-family: "Segoe UI", sans-serif;
   color: #5a5a5a;
   display: inline-block;
+  vertical-align: top;
   background: white;
   border-top: 2px solid transparent;
   border-radius: 4px;
@@ -330,16 +332,10 @@ body {
   border-left: 4px solid #007acc;
   padding-left: 10px;
 }
-.card__content {
-  margin-bottom: 10px;
-}
 .card__content .img {
   border-radius: 2px;
-  margin-bottom: 10px;
-  background: #282c34;
-  width: auto;
-  height: 160px;
-  overflow: hidden;
+  margin-bottom: 20px;
+  max-height: 400px;
 }
 .card__content .img img {
   width: 100%;
@@ -515,14 +511,25 @@ body {
   padding: 10px;
 }
 .case__header {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .case__header h1 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
+.case__header__pills {
+  margin-bottom: 10px;
+}
+.case__header a {
+  margin-right: 20px;
+}
 .case__content__summary, .case__content__feature {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+.case__content h2 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #474747;
 }
 .case__content__feature {
   display: flex;
@@ -548,11 +555,11 @@ body {
 
 .pill {
   color: white;
-  border-radius: 11px;
+  border-radius: 6px;
   font-size: 12px;
   padding: 4px 10px;
   display: inline-block;
-  min-width: 30px;
+  min-width: 50px;
   text-align: center;
   margin-right: 8px;
   margin-bottom: 8px;

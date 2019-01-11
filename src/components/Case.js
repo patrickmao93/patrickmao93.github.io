@@ -7,8 +7,6 @@ import GuessThePhrase from "./static/GuessThePhrase";
 import Gallery from "./static/Gallery";
 
 class Case extends React.Component {
-  componentDidMount() {}
-
   render() {
     const { params } = this.props.match;
     switch (params.name) {

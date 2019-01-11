@@ -2,16 +2,28 @@
   max-width: 1000px;
   padding: 10px;
   &__header {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     h1 {
       font-size: 2rem;
       margin-bottom: 20px;
+    }
+    &__pills {
+      margin-bottom: 10px;
+    }
+
+    a {
+      margin-right: 20px;
     }
   }
   &__content {
     &__summary,
     &__feature {
-      margin-bottom: 30px;
+      margin-bottom: 60px;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+      color: $color-font-primary;
     }
     &__summary {
     }

@@ -3,6 +3,9 @@ import React from "react";
 import Pill from "./widgets/Pill";
 
 const renderPills = pills => {
+  if (!pills) {
+    return;
+  }
   return pills.map(pill => <Pill key={pill} type={pill} />);
 };
 

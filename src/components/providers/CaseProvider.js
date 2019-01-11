@@ -2,7 +2,7 @@ import React from "react";
 
 import CaseContext from "../contexts/CaseContext";
 
-import employeeDirectoryPNG from "../../media/employee-directory.png";
+import employeeDirectoryPNG from "../../media/employee-directory/employee-directory.png";
 import chartPNG from "../../media/chart.png";
 import guessThePhrasePNG from "../../media/game.png";
 import galleryPNG from "../../media/gallery.png";

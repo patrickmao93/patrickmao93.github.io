@@ -1,6 +1,9 @@
 .nav {
-  background: $color-background-primary;
+  background: $color-background-secondary;
   width: 100%;
+  box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.2),
+    0 2px 8px 4px rgba(60, 64, 67, 0.1);
+  z-index: 10000;
   &__link {
     display: inline-block;
     padding: 14px;

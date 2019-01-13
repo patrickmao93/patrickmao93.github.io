@@ -1,5 +1,6 @@
 .header {
   background: $color-background-primary;
+
   width: 100%;
   padding: 6px;
   grid-area: header;
@@ -11,6 +12,7 @@
 
   &__title {
     margin-left: 15px;
+    color: $color-background-secondary;
   }
 
   @include media("lg") {

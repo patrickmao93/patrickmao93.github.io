@@ -2,40 +2,21 @@ $font-family-primary: "Segoe UI", sans-serif;
 $font-family-primary-italic: "Segoe UI Italic", sans-serif;
 $font-family-secondary: "Consola", sans-serif;
 
-//Atom one dark theme
-// $color-background-primary: #21252b;
-// $color-background-secondary: #282c34;
-// $color-background-sidebar: #333842;
-// $color-background-card: #20232a;
-// $color-font-highlight: white;
-// $color-font-primary: #99a0af;
-// $color-font-secondary: #abb2bf;
-
 //light theme
-$color-background-primary: white;
+$color-background-primary: #202124;
 $color-background-secondary: white;
 $color-background-sidebar: white;
 $color-background-card: white;
-$color-font-highlight: black;
-$color-font-primary: #474747;
+$color-font-highlight: #202124;
+$color-font-primary: #202124;
 $color-font-secondary: #5a5a5a;
 $color-background-code: #f3f4f4;
-
-//dark theme
-// $color-background-primary: #282c34;
-// $color-background-secondary: #282c34;
-// $color-background-sidebar: #282c34;
-// $color-background-card: #20232a;
-// $color-font-highlight: white;
-// $color-font-primary: #99a0af;
-// $color-font-secondary: #abb2bf;
+$color-border-primary: #efefef;
+$color-border-secondary: #181a1f;
 
 $color-background-focus: #383b41;
 
 $color-primary: #007acc;
-
-$color-border-primary: #efefef;
-$color-border-secondary: #181a1f;
 
 $color-font-link: #528bff;
 
@@ -50,3 +31,25 @@ $box-shadow-lg: 0px 4px 20px
     $color: #000000,
     $alpha: 0.5
   );
+
+// Atom one dark theme
+
+// $color-background-primary: #21252b;
+// $color-background-secondary: #282c34;
+// $color-background-sidebar: #333842;
+// $color-background-card: #20232a;
+// $color-font-highlight: white;
+// $color-font-primary: #99a0af;
+// $color-font-secondary: #abb2bf;
+// $color-border-primary: #efefef;
+// $color-border-secondary: #181a1f;
+// dark theme
+// $color-background-primary: #282c34;
+// $color-background-secondary: #282c34;
+// $color-background-sidebar: #282c34;
+// $color-background-card: #20232a;
+// $color-font-highlight: white;
+// $color-font-primary: #99a0af;
+// $color-font-secondary: #abb2bf;
+// $color-border-primary: #efefef;
+// $color-border-secondary: #181a1f;

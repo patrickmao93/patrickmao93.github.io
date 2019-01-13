@@ -3,7 +3,8 @@
   height: calc(100vh - 103px);
   padding: 10px;
   position: relative;
-  overflow: auto;
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
   color: $color-font-secondary;
 
   a {

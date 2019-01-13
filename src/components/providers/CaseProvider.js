@@ -2,11 +2,11 @@ import React from "react";
 
 import CaseContext from "../contexts/CaseContext";
 
-import employeeDirectoryPNG from "../../media/employee-directory/employee-directory.png";
-import chartPNG from "../../media/chart.png";
-import guessThePhrasePNG from "../../media/game.png";
-import galleryPNG from "../../media/gallery.png";
-import ccoPNG from "../../media/cco.png";
+import employeeDirectoryPNG from "../../media/employee-directory/lg.png";
+import chartPNG from "../../media/chart-app/desktop.png";
+import guessThePhrasePNG from "../../media/guess-the-phrase/game.png";
+import galleryPNG from "../../media/gallery/desktop.png";
+import ccoPNG from "../../media/cco/cco.png";
 
 class CaseProvider extends React.Component {
   state = {
@@ -31,7 +31,7 @@ class CaseProvider extends React.Component {
       }
     },
     chartApp: {
-      header: "Chart App",
+      header: "Dashboard App",
       imgUrl: chartPNG,
       tabInfo: {
         name: "Chart App",

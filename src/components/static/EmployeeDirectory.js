@@ -13,20 +13,24 @@ const EmployeeDirectory = () => {
     <div className="case">
       <div className="case__header">
         <h1>Employee Directory App</h1>
-        <div className="case__header__pills">
-          <Pill type="react" />
-          <Pill type="redux" />
-          <Pill type="js" />
-          <Pill type="sass" />
+        <div className="case__header__info">
+          <div className="case__header__info__pills">
+            <Pill type="react" />
+            <Pill type="redux" />
+            <Pill type="js" />
+            <Pill type="sass" />
+          </div>
+          <div className="case__header__info__links">
+            <a href="https://github.com/patrickmao93/techdegree-project-8">
+              <i className="fab fa-github" />
+              View on Github
+            </a>
+            <a href="https://patrickmao93.github.io/EmployeeDirectory-React">
+              <i className="far fa-window-maximize" />
+              Go to live page
+            </a>
+          </div>
         </div>
-        <a href="https://github.com/patrickmao93/techdegree-project-8">
-          <i className="fab fa-github" />
-          View on Github
-        </a>
-        <a href="https://patrickmao93.github.io/EmployeeDirectory-React">
-          <i className="far fa-window-maximize" />
-          Go to live page
-        </a>
       </div>
       <div className="case__content">
         <h2>Summary</h2>
@@ -37,7 +41,7 @@ const EmployeeDirectory = () => {
           </a>
           . <br />
           The purpose of this project is to help myself practicing the concept
-          of utilizing the fetch API to pull data from an online API
+          of utilizing the <em>fetch</em> API to pull data from an online API
           asynchronously. It also helped me understand <em>Promise</em>. <br />
           What this project really showed/taught me was how easily front end
           code can get messy and hard to maintain when it comes to data handling

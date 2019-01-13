@@ -6,8 +6,8 @@
   background: $color-background-card;
   border-top: 2px solid transparent;
   padding: 20px;
-  width: 300px;
-  margin: 10px;
+  padding-bottom: 10px;
+  margin: 26px;
   transition: 0.2s ease;
   border-radius: 6px;
   box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
@@ -31,13 +31,13 @@
 
   &__content {
     .img {
-      border-radius: 2px;
+      border-radius: 4px;
       margin-bottom: 20px;
       max-height: 400px;
       overflow: hidden;
       img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        max-height: 400px;
       }
     }
   }

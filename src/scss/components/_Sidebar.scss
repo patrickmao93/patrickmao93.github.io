@@ -1,16 +1,15 @@
 .sidebar {
+  display: none;
   font-size: 1.6rem;
   height: 100%;
   position: relative;
   z-index: 10001;
-  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
-    0 1px 3px 1px rgba(60, 64, 67, 0.16);
+  border-right: 1px solid $color-border-primary;
   background: $color-background-sidebar;
   color: $color-font-secondary;
   grid-area: sidebar;
-  @include flex($dir: column);
 
-  @include media("lg") {
+  @include media("md") {
     @include flex($dir: column);
   }
 

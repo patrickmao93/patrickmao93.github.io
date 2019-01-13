@@ -149,6 +149,7 @@ a {
 
 p {
   line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 em {
@@ -222,7 +223,7 @@ em {
 .nav {
   background: white;
   width: 100%;
-  box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.2), 0 2px 8px 4px rgba(60, 64, 67, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   z-index: 10000;
 }
 .nav__link {
@@ -309,8 +310,8 @@ em {
   background: white;
   border-top: 2px solid transparent;
   padding: 20px;
-  width: 300px;
-  margin: 10px;
+  padding-bottom: 10px;
+  margin: 26px;
   transition: 0.2s ease;
   border-radius: 6px;
   box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16);
@@ -329,32 +330,28 @@ em {
   padding-left: 10px;
 }
 .card__content .img {
-  border-radius: 2px;
+  border-radius: 4px;
   margin-bottom: 20px;
   max-height: 400px;
   overflow: hidden;
 }
 .card__content .img img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  max-height: 400px;
 }
 
 .sidebar {
+  display: none;
   font-size: 1.6rem;
   height: 100%;
   position: relative;
   z-index: 10001;
-  box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16);
+  border-right: 1px solid #efefef;
   background: white;
   color: #5a5a5a;
   grid-area: sidebar;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: center;
 }
-@media (min-width: 900px) {
+@media (min-width: 480px) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -423,8 +420,12 @@ em {
 }
 
 .portfolio {
-  max-width: 1000px;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .code {
@@ -480,13 +481,21 @@ em {
 }
 
 .portfolio {
-  max-width: 1000px;
-  padding: 20px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
 }
 
 .case {
   max-width: 1000px;
-  padding: 20px;
+}
+@media (min-width: 900px) {
+  .case {
+    padding: 20px;
+  }
 }
 .case__header {
   margin-bottom: 40px;
@@ -510,7 +519,7 @@ em {
 .case__header a {
   margin-right: 20px;
 }
-.case__content__summary, .case__content__feature, .case__content__list {
+.case__content__feature, .case__content__list {
   margin-bottom: 60px;
 }
 .case__content h2 {

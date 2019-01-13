@@ -12,9 +12,9 @@ const renderPills = pills => {
 const Card = props => {
   return (
     <div className="card">
-      <div className="card__header">
+      {/* <div className="card__header">
         <h2>{props.header}</h2>
-      </div>
+      </div> */}
       <div className="card__content">
         <div className="img">
           <img src={props.imgUrl} alt={props.header} />

@@ -32,7 +32,7 @@ const ChartApp = () => {
       </div>
       <div className="case__content">
         <h2>Summary</h2>
-        <p className="case__content__summary">
+        <p className="case__content__paragraph">
           This was the project #7 of the{" "}
           <a href="https://teamtreehouse.com/techdegree/front-end-web-development">
             Treehouse Front End Web Development Techdegree

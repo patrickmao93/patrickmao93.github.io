@@ -1,6 +1,9 @@
 .case {
   max-width: 1000px;
-  padding: 20px;
+
+  @include media("lg") {
+    padding: 20px;
+  }
   &__header {
     margin-bottom: 40px;
     padding-bottom: 10px;
@@ -27,7 +30,6 @@
     }
   }
   &__content {
-    &__summary,
     &__feature,
     &__list {
       margin-bottom: 60px;

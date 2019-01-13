@@ -1,7 +1,7 @@
 {
-  "main.css": "/static/css/main.8af37b23.chunk.css",
-  "main.js": "/static/js/main.e61eb837.chunk.js",
-  "main.js.map": "/static/js/main.e61eb837.chunk.js.map",
+  "main.css": "/static/css/main.424eb1fd.chunk.css",
+  "main.js": "/static/js/main.4be66b24.chunk.js",
+  "main.js.map": "/static/js/main.4be66b24.chunk.js.map",
   "static/js/1.9e06cb4b.chunk.js": "/static/js/1.9e06cb4b.chunk.js",
   "static/js/1.9e06cb4b.chunk.js.map": "/static/js/1.9e06cb4b.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -21,8 +21,8 @@
   "static/media/codewars.svg": "/static/media/codewars.ff5b0a65.svg",
   "static/media/cco.png": "/static/media/cco.3991b36b.png",
   "static/media/index.css": "/static/media/segoeui.3922dbc6.ttf",
-  "static/css/main.8af37b23.chunk.css.map": "/static/css/main.8af37b23.chunk.css.map",
+  "static/css/main.424eb1fd.chunk.css.map": "/static/css/main.424eb1fd.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.2a1f03fc01dd09bd24b57d80e5bdb1a1.js": "/precache-manifest.2a1f03fc01dd09bd24b57d80e5bdb1a1.js",
+  "precache-manifest.ffe70cfc72cad698f1b2af9b0f829a27.js": "/precache-manifest.ffe70cfc72cad698f1b2af9b0f829a27.js",
   "service-worker.js": "/service-worker.js"
 }

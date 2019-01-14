@@ -60,10 +60,10 @@ const EmployeeDirectory = () => {
           </a>
         </p>
         <h2>Screenshots</h2>
-        <Card header="Mobile" imgUrl={sm} />
-        <Card header="Tablet" imgUrl={md} />
-        <Card header="Desktop" imgUrl={lg} />
-        <Card header="Loading Screen" imgUrl={loading} />
+        <Card imgUrl={sm} />
+        <Card imgUrl={md} />
+        <Card imgUrl={lg} />
+        <Card imgUrl={loading} />
       </div>
     </div>
   );

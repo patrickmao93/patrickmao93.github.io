@@ -1,0 +1,28 @@
+.resume {
+  &__card {
+    padding: 20px;
+    @include flex();
+
+    &__img {
+      border-radius: 50%;
+      @include img($w: 120px, $h: 120px);
+      margin-right: 16px;
+    }
+
+    &__info {
+      &__header {
+        color: $color-font-highlight;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-bottom: 12px;
+      }
+
+      &__content {
+        span {
+          display: block;
+          line-height: 1.5;
+        }
+      }
+    }
+  }
+}

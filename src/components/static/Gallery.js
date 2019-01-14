@@ -54,10 +54,10 @@ const Gallery = () => {
           <li>CSS3 Aniation</li>
         </ul>
         <h2>Screenshots</h2>
-        <Card header="Small" imgUrl={sm} />
-        <Card header="Medium" imgUrl={md} />
-        <Card header="Large" imgUrl={lg} />
-        <Card header="Lightbox" imgUrl={lightbox} />
+        <Card imgUrl={sm} />
+        <Card imgUrl={md} />
+        <Card imgUrl={lg} />
+        <Card imgUrl={lightbox} />
       </div>
     </div>
   );

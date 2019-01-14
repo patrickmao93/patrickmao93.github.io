@@ -10,11 +10,34 @@ const renderPills = pills => {
   return pills.map(pill => <Pill key={pill} type={pill} />);
 };
 
+const renderHeader = props => {
+  if (props.header) {
+    return (
+      <div className="card__title">
+        <h2>{props.header}</h2>
+        <div className="pills">{renderPills(props.pills)}</div>
+      </div>
+    );
+  }
+};
+
+const renderImage = props => {
+  if (!props.imgUrl) {
+    return;
+  }
+  return (
+    <div className="img">
+      <img src={props.imgUrl} alt={props.header} height="auto" width="auto" />
+    </div>
+  );
+};
+
 const Card = p => {
   let interactable = "";
   if (p.interactable) {
     interactable = "card--interactable";
   }
+
   return (
     <Spring
       from={{ opacity: 0 }}
@@ -25,14 +48,9 @@ const Card = p => {
         return (
           <div className={`card ${interactable}`} style={props}>
             <div className="card__content">
-              <div className="img">
-                <img src={p.imgUrl} alt={p.header} height="auto" width="auto" />
-              </div>
+              {renderImage(p)} {p.children}
             </div>
-            <div className="card__title">
-              <h2>{p.header}</h2>
-              <div className="pills">{renderPills(p.pills)}</div>
-            </div>
+            {renderHeader(p)}
           </div>
         );
       }}

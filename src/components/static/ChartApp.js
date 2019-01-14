@@ -55,9 +55,9 @@ const ChartApp = () => {
           <li>Responsive web design</li>
         </ul>
         <div className="case__content__cards" />
-        <Card header="Mobile" imgUrl={sm} />
-        <Card header="Tablet" imgUrl={md} />
-        <Card header="Desktop" imgUrl={lg} />
+        <Card imgUrl={sm} />
+        <Card imgUrl={md} />
+        <Card imgUrl={lg} />
       </div>
     </div>
   );

@@ -7,8 +7,21 @@
   width: 100%;
   font-size: 0.75rem;
   background: $color-background-primary;
-  color: $color-background-secondary;
+  color: $color-font-inverse;
+  @include flex();
   .signal {
     color: #28a745;
+  }
+
+  &__right {
+    display: none;
+    margin-left: auto;
+    .fa-react {
+      color: #72ddfa;
+    }
+
+    @include media("md") {
+      display: block;
+    }
   }
 }

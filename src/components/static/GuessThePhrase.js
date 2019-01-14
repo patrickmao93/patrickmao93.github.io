@@ -51,8 +51,8 @@ const GuessThePhrase = () => {
           <li>CSS3 Aniation</li>
         </ul>
         <h2>Screenshots</h2>
-        <Card header="Playing" imgUrl={playing} />
-        <Card header="Ending" imgUrl={ending} />
+        <Card imgUrl={playing} />
+        <Card imgUrl={ending} />
       </div>
     </div>
   );

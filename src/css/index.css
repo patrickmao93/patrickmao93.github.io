@@ -230,7 +230,7 @@ em {
   display: inline-block;
   padding: 14px;
   transition: 0.2s ease;
-  border-bottom: 1px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 .nav__link:hover .fa-times {
   opacity: 0.5;
@@ -249,7 +249,7 @@ em {
 }
 .nav__link--active {
   color: #202124;
-  border-bottom: 1px solid #007acc;
+  border-bottom: 3px solid #007acc;
 }
 .nav__link--active .fa-times {
   opacity: 0.5;
@@ -276,7 +276,7 @@ em {
 
 .content {
   width: 100%;
-  height: calc(100vh - 103px);
+  height: calc(100vh - 105px);
   padding: 10px;
   position: relative;
   overflow: scroll;
@@ -308,36 +308,49 @@ em {
   display: inline-block;
   vertical-align: top;
   background: white;
-  border-top: 2px solid transparent;
-  padding: 20px;
-  padding-bottom: 10px;
+  overflow: hidden;
   margin: 26px;
   transition: 0.2s ease;
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08), 0 1px 3px 1px rgba(60, 64, 67, 0.16);
 }
-.card:hover {
-  border-top: 2px solid rgba(0, 122, 204, 0.6);
+.card--interactable:hover {
   box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.2), 0 2px 8px 4px rgba(60, 64, 67, 0.1);
   transform: translateY(-3px);
 }
-.card__header {
-  margin-bottom: 10px;
-}
 .card__header h2 {
+  font-size: 1.2rem;
+  margin: 14px 0;
   line-height: 1.2;
   border-left: 4px solid #007acc;
   padding-left: 10px;
 }
+.card__content {
+  position: relative;
+  overflow: hidden;
+}
 .card__content .img {
-  border-radius: 4px;
-  margin-bottom: 20px;
+  border-radius: 8px 8px 0 0;
   max-height: 400px;
   overflow: hidden;
 }
 .card__content .img img {
   width: auto;
   max-height: 400px;
+}
+.card__title {
+  position: relative;
+  z-index: 100;
+  border-radius: 0 0 8px 8px;
+  padding: 20px;
+  color: #202124;
+  border-top: 1px solid #efefef;
+}
+.card__title h2 {
+  font-size: 1.2rem;
+}
+.card .pills {
+  margin-top: 16px;
 }
 
 .sidebar {
@@ -360,16 +373,17 @@ em {
     align-items: center;
   }
 }
-.sidebar__setting {
-  margin-top: auto;
-}
 .sidebar__icon {
-  padding: 12px;
+  display: block;
+  padding: 12px 14px;
   opacity: 0.7;
   transition: opacity 0.2s ease;
 }
 .sidebar__icon:hover {
   opacity: 1;
+}
+.sidebar__icon i {
+  margin: 0;
 }
 
 .intro {
@@ -559,7 +573,7 @@ em {
   text-align: center;
   margin-right: 12px;
   margin-bottom: 12px;
-  opacity: 0.7;
+  opacity: 1;
 }
 .pill-js {
   background: #f5dc4e;

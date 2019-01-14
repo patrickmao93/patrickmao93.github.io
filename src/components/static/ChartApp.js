@@ -9,7 +9,7 @@ import sm from "../../media/chart-app/phone.png";
 
 const ChartApp = () => {
   return (
-    <div className="case">
+    <div>
       <div className="case__header">
         <h1>Dashboard App</h1>
 

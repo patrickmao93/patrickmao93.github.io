@@ -10,7 +10,7 @@ import loading from "../../media/employee-directory/loading.png";
 
 const EmployeeDirectory = () => {
   return (
-    <div className="case">
+    <div>
       <div className="case__header">
         <h1>Employee Directory App</h1>
         <div className="case__header__info">
@@ -60,10 +60,10 @@ const EmployeeDirectory = () => {
           </a>
         </p>
         <h2>Screenshots</h2>
-        <Card header="Desktop" imgUrl={lg} />
-        <Card header="Tablet" imgUrl={md} />
-        <Card header="Loading Screen" imgUrl={loading} />
         <Card header="Mobile" imgUrl={sm} />
+        <Card header="Tablet" imgUrl={md} />
+        <Card header="Desktop" imgUrl={lg} />
+        <Card header="Loading Screen" imgUrl={loading} />
       </div>
     </div>
   );

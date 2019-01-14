@@ -19,6 +19,7 @@ const Portfolio = props => {
                 <Card
                   header={state.CCO.header}
                   imgUrl={state.CCO.imgUrl}
+                  interactable={true}
                   pills={[
                     "js",
                     "jquery",
@@ -39,6 +40,7 @@ const Portfolio = props => {
                 <Card
                   header={state.employeeDirectory.header}
                   imgUrl={state.employeeDirectory.imgUrl}
+                  interactable={true}
                   pills={["react", "redux", "js", "sass"]}
                 />
               </Link>
@@ -50,6 +52,7 @@ const Portfolio = props => {
                 <Card
                   header={state.chartApp.header}
                   imgUrl={state.chartApp.imgUrl}
+                  interactable={true}
                   pills={["js", "sass", "chartjs"]}
                 />
               </Link>
@@ -61,6 +64,7 @@ const Portfolio = props => {
                 <Card
                   header={state.guessThePhrase.header}
                   imgUrl={state.guessThePhrase.imgUrl}
+                  interactable={true}
                   pills={["js"]}
                 />
               </Link>
@@ -72,6 +76,7 @@ const Portfolio = props => {
                 <Card
                   header={state.photoGallery.header}
                   imgUrl={state.photoGallery.imgUrl}
+                  interactable={true}
                   pills={["js", "jquery"]}
                 />
               </Link>

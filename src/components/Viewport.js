@@ -24,6 +24,8 @@ class Viewport extends React.Component {
     ]
   };
 
+  contentRef = React.createRef();
+
   onClickCase = newTab => {
     //if tab doesn't exist already, push the new tab into tabs array
     if (!this.state.tabs.find(tab => tab.to === newTab.to)) {

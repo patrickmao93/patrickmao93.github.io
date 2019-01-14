@@ -4,25 +4,25 @@
   display: inline-block;
   vertical-align: top;
   background: $color-background-card;
-  border-top: 2px solid transparent;
-  padding: 20px;
-  padding-bottom: 10px;
+  overflow: hidden;
   margin: 26px;
   transition: 0.2s ease;
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 1px 1px 0 rgba(60, 64, 67, 0.08),
     0 1px 3px 1px rgba(60, 64, 67, 0.16);
 
-  &:hover {
-    border-top: 2px solid rgba($color: $color-primary, $alpha: 0.6);
-    box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.2),
-      0 2px 8px 4px rgba(60, 64, 67, 0.1);
-    transform: translateY(-3px);
+  &--interactable {
+    &:hover {
+      box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.2),
+        0 2px 8px 4px rgba(60, 64, 67, 0.1);
+      transform: translateY(-3px);
+    }
   }
 
   &__header {
-    margin-bottom: 10px;
     h2 {
+      font-size: 1.2rem;
+      margin: 14px 0;
       line-height: 1.2;
       border-left: 4px solid $color-primary;
       padding-left: 10px;
@@ -30,9 +30,10 @@
   }
 
   &__content {
+    position: relative;
+    overflow: hidden;
     .img {
-      border-radius: 4px;
-      margin-bottom: 20px;
+      border-radius: 8px 8px 0 0;
       max-height: 400px;
       overflow: hidden;
       img {
@@ -40,5 +41,20 @@
         max-height: 400px;
       }
     }
+  }
+
+  &__title {
+    position: relative;
+    z-index: 100;
+    border-radius: 0 0 8px 8px;
+    padding: 20px;
+    color: $color-font-primary;
+    border-top: 1px solid $color-border-primary;
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  .pills {
+    margin-top: 16px;
   }
 }

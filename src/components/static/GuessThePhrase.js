@@ -3,8 +3,8 @@ import React from "react";
 import Pill from "./../widgets/Pill";
 import Card from "../Card";
 
-import playing from "../../media/guess-the-phrase/playing.png";
-import ending from "../../media/guess-the-phrase/ending.png";
+import playing from "../../media/guess-the-phrase/playing.jpg";
+import ending from "../../media/guess-the-phrase/ending.jpg";
 
 const GuessThePhrase = () => {
   return (

@@ -3,9 +3,9 @@ import React from "react";
 import Pill from "./../widgets/Pill";
 import Card from "./../Card";
 
-import lg from "../../media/chart-app/desktop.png";
-import md from "../../media/chart-app/tablet.png";
-import sm from "../../media/chart-app/phone.png";
+import lg from "../../media/chart-app/desktop.jpg";
+import md from "../../media/chart-app/tablet.jpg";
+import sm from "../../media/chart-app/phone.jpg";
 
 const ChartApp = () => {
   return (

@@ -2,17 +2,17 @@ import React from "react";
 
 import CaseContext from "../contexts/CaseContext";
 
-import employeeDirectoryPNG from "../../media/employee-directory/lg.png";
-import chartPNG from "../../media/chart-app/desktop.png";
-import guessThePhrasePNG from "../../media/guess-the-phrase/game.png";
-import galleryPNG from "../../media/gallery/desktop.png";
-import ccoPNG from "../../media/cco/cco.png";
+import employeeDirectoryjpg from "../../media/employee-directory/lg.jpg";
+import chartjpg from "../../media/chart-app/desktop.jpg";
+import guessThePhrasejpg from "../../media/guess-the-phrase/game.jpg";
+import galleryjpg from "../../media/gallery/desktop.jpg";
+import ccojpg from "../../media/cco/cco.jpg";
 
 class CaseProvider extends React.Component {
   state = {
     CCO: {
       header: "Purdue University - Center for Career Opportunities Website V4",
-      imgUrl: ccoPNG,
+      imgUrl: ccojpg,
       tabInfo: {
         name: "PurdueCCO Site",
         to: "/portfolio/cco",
@@ -22,7 +22,7 @@ class CaseProvider extends React.Component {
     },
     employeeDirectory: {
       header: "Employee Directory",
-      imgUrl: employeeDirectoryPNG,
+      imgUrl: employeeDirectoryjpg,
       tabInfo: {
         name: "Employee Directory",
         to: "/portfolio/employee-directory",
@@ -32,7 +32,7 @@ class CaseProvider extends React.Component {
     },
     chartApp: {
       header: "Dashboard App",
-      imgUrl: chartPNG,
+      imgUrl: chartjpg,
       tabInfo: {
         name: "Chart App",
         to: "/portfolio/chart-app",
@@ -42,7 +42,7 @@ class CaseProvider extends React.Component {
     },
     guessThePhrase: {
       header: "Guess The Phrase!",
-      imgUrl: guessThePhrasePNG,
+      imgUrl: guessThePhrasejpg,
       tabInfo: {
         name: "Guess The Phrase!",
         to: "/portfolio/guess-the-phrase",
@@ -52,7 +52,7 @@ class CaseProvider extends React.Component {
     },
     photoGallery: {
       header: "A Responsive Photo Gallery",
-      imgUrl: galleryPNG,
+      imgUrl: galleryjpg,
       tabInfo: {
         name: "A Reponsive Photo Gallery",
         to: "/portfolio/a-responsive-photo-gallery",

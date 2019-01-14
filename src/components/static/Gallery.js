@@ -3,10 +3,10 @@ import React from "react";
 import Pill from "./../widgets/Pill";
 import Card from "../Card";
 
-import sm from "../../media/gallery/phone.png";
-import md from "../../media/gallery/tablet.png";
-import lg from "../../media/gallery/desktop.png";
-import lightbox from "../../media/gallery/lightbox.png";
+import sm from "../../media/gallery/phone.jpg";
+import md from "../../media/gallery/tablet.jpg";
+import lg from "../../media/gallery/desktop.jpg";
+import lightbox from "../../media/gallery/lightbox.jpg";
 
 const Gallery = () => {
   return (

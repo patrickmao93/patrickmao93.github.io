@@ -3,10 +3,10 @@ import React from "react";
 import Pill from "./../widgets/Pill";
 import Card from "../Card";
 
-import sm from "../../media/employee-directory/sm.png";
-import md from "../../media/employee-directory/md.png";
-import lg from "../../media/employee-directory/lg.png";
-import loading from "../../media/employee-directory/loading.png";
+import sm from "../../media/employee-directory/sm.jpg";
+import md from "../../media/employee-directory/md.jpg";
+import lg from "../../media/employee-directory/lg.jpg";
+import loading from "../../media/employee-directory/loading.jpg";
 
 const EmployeeDirectory = () => {
   return (

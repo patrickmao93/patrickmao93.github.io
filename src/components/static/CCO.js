@@ -1,7 +1,6 @@
 import React from "react";
 
 import Pill from "./../widgets/Pill";
-import Card from "../Card";
 
 const CCO = () => {
   return (

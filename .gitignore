@@ -8,6 +8,9 @@
 # css
 /.css
 
+# backup
+backup/
+
 # testing
 /coverage
 

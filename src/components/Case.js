@@ -7,8 +7,6 @@ import GuessThePhrase from "./static/GuessThePhrase";
 import Gallery from "./static/Gallery";
 
 class Case extends React.Component {
-  caseRef = React.createRef();
-
   renderContent = () => {
     switch (this.props.match.params.name) {
       case "cco":
@@ -27,16 +25,8 @@ class Case extends React.Component {
     }
   };
 
-  componentDidMount() {
-    console.log(this.caseRef.current.scrollTop);
-  }
-
   render() {
-    return (
-      <div ref={this.caseRef} className="case">
-        {this.renderContent()}
-      </div>
-    );
+    return <div className="case">{this.renderContent()}</div>;
   }
 }
 

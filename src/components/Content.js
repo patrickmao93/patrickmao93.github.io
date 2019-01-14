@@ -7,9 +7,15 @@ import Resume from "./Resume";
 import Case from "./Case";
 
 class Content extends React.Component {
+  contentRef = React.createRef();
+
+  componentDidUpdate() {
+    this.contentRef.current.scrollTop = 0;
+  }
+
   render() {
     return (
-      <div className="content">
+      <div ref={this.contentRef} className="content">
         <Switch>
           <Route path="/" exact component={Intro} />
           <Route

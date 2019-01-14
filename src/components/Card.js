@@ -19,7 +19,7 @@ const Card = p => {
     <Spring
       from={{ opacity: 0 }}
       to={{ opacity: 1 }}
-      config={{ delay: 300, ...config.gentle }}
+      config={{ delay: 200, ...config.gentle }}
     >
       {props => {
         return (

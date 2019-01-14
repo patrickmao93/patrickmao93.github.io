@@ -67,7 +67,6 @@ class CaseProvider extends React.Component {
     for (const page in this.state) {
       const img = new Image();
       img.src = this.state[page].imgUrl;
-      console.log(img);
     }
   }
 

@@ -19,11 +19,11 @@ const ChartApp = () => {
             <Pill type="chartjs" />
           </div>
           <div className="case__header__info__links">
-            <a href="https://github.com/patrickmao93/techdegree-project-5">
+            <a href="https://github.com/patrickmao93/techdegree-project-7">
               <i className="fab fa-github" />
               View on Github
             </a>
-            <a href="https://patrickmao93.github.io/techdegree-project-5">
+            <a href="https://patrickmao93.github.io/techdegree-project-7">
               <i className="far fa-window-maximize" />
               Go to live page
             </a>

@@ -4,7 +4,7 @@ import Pill from "./../widgets/Pill";
 
 const CCO = () => {
   return (
-    <div className="case">
+    <div>
       <div className="case__header">
         <h1>Purdue University Center for Career Opportunities Website V4</h1>
         <div className="case__header__info">

@@ -62,6 +62,15 @@ class CaseProvider extends React.Component {
     }
   };
 
+  componentDidMount() {
+    //preload all images when provider mounts
+    for (const page in this.state) {
+      const img = new Image();
+      img.src = this.state[page].imgUrl;
+      console.log(img);
+    }
+  }
+
   render() {
     return (
       <CaseContext.Provider

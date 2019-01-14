@@ -26,7 +26,7 @@ const Card = p => {
           <div className={`card ${interactable}`} style={props}>
             <div className="card__content">
               <div className="img">
-                <img src={p.imgUrl} alt={p.header} />
+                <img src={p.imgUrl} alt={p.header} height="auto" width="auto" />
               </div>
             </div>
             <div className="card__title">

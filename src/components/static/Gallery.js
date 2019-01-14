@@ -10,7 +10,7 @@ import lightbox from "../../media/gallery/lightbox.jpg";
 
 const Gallery = () => {
   return (
-    <div className="case">
+    <div>
       <div className="case__header">
         <h1>A Responsive Photo Gallery</h1>
         <div className="case__header__info">
@@ -19,11 +19,11 @@ const Gallery = () => {
             <Pill type="jquery" />
           </div>
           <div className="case__header__info__links">
-            <a href="https://github.com/patrickmao93/techdegree-project-6">
+            <a href="https://github.com/patrickmao93/techdegree-project-5">
               <i className="fab fa-github" />
               View on Github
             </a>
-            <a href="https://patrickmao93.github.io/techdegree-project-6">
+            <a href="https://patrickmao93.github.io/techdegree-project-5">
               <i className="far fa-window-maximize" />
               Go to live page
             </a>

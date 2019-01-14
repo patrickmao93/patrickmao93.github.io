@@ -8,7 +8,7 @@ import ending from "../../media/guess-the-phrase/ending.jpg";
 
 const GuessThePhrase = () => {
   return (
-    <div className="case">
+    <div>
       <div className="case__header">
         <h1>Guess The Phrase!</h1>
         <div className="case__header__info">

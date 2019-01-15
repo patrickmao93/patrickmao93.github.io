@@ -25,10 +25,20 @@ const renderImage = props => {
   if (!props.imgUrl) {
     return;
   }
-  return (
-    <div className="img">
-      <img src={props.imgUrl} alt={props.header} height="auto" width="auto" />
+  const ribbon = props.type && (
+    <div
+      className={`card__content__ribbon card__content__ribbon--${props.type}`}
+    >
+      {props.type}
     </div>
+  );
+  return (
+    <>
+      <div className="card__content__img">
+        <img src={props.imgUrl} alt={props.header} />
+      </div>
+      {ribbon}
+    </>
   );
 };
 

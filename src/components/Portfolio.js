@@ -11,7 +11,7 @@ const Portfolio = props => {
       <CaseContext.Consumer>
         {({ state }) => {
           return (
-            <div>
+            <>
               <Link
                 to={state.CCO.tabInfo.to}
                 onClick={() => props.onClickCase(state.CCO.tabInfo)}
@@ -19,6 +19,7 @@ const Portfolio = props => {
                 <Card
                   header={state.CCO.header}
                   imgUrl={state.CCO.imgUrl}
+                  type="Production"
                   interactable={true}
                   pills={[
                     "js",
@@ -41,6 +42,7 @@ const Portfolio = props => {
                   header={state.employeeDirectory.header}
                   imgUrl={state.employeeDirectory.imgUrl}
                   interactable={true}
+                  type="Personal"
                   pills={["react", "redux", "js", "sass"]}
                 />
               </Link>
@@ -53,6 +55,7 @@ const Portfolio = props => {
                   header={state.chartApp.header}
                   imgUrl={state.chartApp.imgUrl}
                   interactable={true}
+                  type="Personal"
                   pills={["js", "sass", "chartjs"]}
                 />
               </Link>
@@ -65,6 +68,7 @@ const Portfolio = props => {
                   header={state.guessThePhrase.header}
                   imgUrl={state.guessThePhrase.imgUrl}
                   interactable={true}
+                  type="Personal"
                   pills={["js"]}
                 />
               </Link>
@@ -77,10 +81,11 @@ const Portfolio = props => {
                   header={state.photoGallery.header}
                   imgUrl={state.photoGallery.imgUrl}
                   interactable={true}
+                  type="Personal"
                   pills={["js", "jquery"]}
                 />
               </Link>
-            </div>
+            </>
           );
         }}
       </CaseContext.Consumer>

@@ -1,6 +1,11 @@
 import React from "react";
 
 import Pill from "./../widgets/Pill";
+import Card from "../Card";
+
+import lg from "../../media/images/cco_1440x800.jpg";
+import md from "../../media/images/cco_768x800.jpg";
+import sm from "../../media/images/cco_425x800.jpg";
 
 const CCO = () => {
   return (
@@ -43,7 +48,11 @@ const CCO = () => {
           CMS, we held meetings on a weekly basis to communicate feedback and
           suggestions with our client (Purdue CCO employee).
         </p>
-        <p />
+
+        <h2>Screenshots</h2>
+        <Card imgUrl={sm} />
+        <Card imgUrl={md} />
+        <Card imgUrl={lg} />
       </div>
     </div>
   );

@@ -347,14 +347,28 @@ em {
   position: relative;
   overflow: hidden;
 }
-.card__content .img {
+.card__content__img {
+  position: relative;
   border-radius: 8px 8px 0 0;
-  max-height: 400px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
 }
-.card__content .img img {
-  width: auto;
-  max-height: 400px;
+.card__content__ribbon {
+  position: absolute;
+  text-align: center;
+  right: -50px;
+  top: 20px;
+  background: rgba(56, 59, 65, 0.9);
+  color: white;
+  padding: 10px 50px;
+  transform: rotate(45deg);
+}
+.card__content__ribbon--Personal {
+  background: rgba(0, 122, 204, 0.9);
 }
 .card__title {
   position: relative;
@@ -452,7 +466,7 @@ em {
 }
 
 .resume__card {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -483,8 +497,8 @@ em {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .code {
@@ -544,8 +558,8 @@ em {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: center;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .case {
@@ -601,7 +615,7 @@ em {
 }
 
 .resume__card {
-  padding: 20px;
+  padding: 30px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;

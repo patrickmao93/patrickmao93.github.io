@@ -8,7 +8,7 @@ const Footer = () => {
         employment
       </span>
       <span className="footer__right">
-        <i className="fab fa-react" /> This site is powered by nuclear reaction
+        Powered by React <i className="fab fa-react" />
       </span>
     </div>
   );

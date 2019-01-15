@@ -17,6 +17,9 @@ const Sidebar = () => {
       <a className="sidebar__icon" href="/">
         <img src={codewarsIcon} alt="codewars" width="24" height="24" />
       </a>
+      <a className="sidebar__icon" href="/">
+        <i className="fab fa-weixin" />
+      </a>
     </div>
   );
 };

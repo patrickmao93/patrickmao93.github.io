@@ -3,10 +3,11 @@ import React from "react";
 import Pill from "./../widgets/Pill";
 import Card from "../Card";
 
-import sm from "../../media/employee-directory/sm.jpg";
-import md from "../../media/employee-directory/md.jpg";
-import lg from "../../media/employee-directory/lg.jpg";
-import loading from "../../media/employee-directory/loading.jpg";
+import lg from "../../media/images/proj8_1440x800.jpg";
+import md from "../../media/images/proj8_1024x800.jpg";
+import sm from "../../media/images/proj8_425x800.jpg";
+import modal from "../../media/images/proj8_1440x800_1.jpg";
+import loading from "../../media/images/proj8_1024x800_2.jpg";
 
 const EmployeeDirectory = () => {
   return (
@@ -63,6 +64,7 @@ const EmployeeDirectory = () => {
         <Card imgUrl={sm} />
         <Card imgUrl={md} />
         <Card imgUrl={lg} />
+        <Card imgUrl={modal} />
         <Card imgUrl={loading} />
       </div>
     </div>

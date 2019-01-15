@@ -2,11 +2,11 @@ import React from "react";
 
 import CaseContext from "../contexts/CaseContext";
 
-import employeeDirectoryjpg from "../../media/employee-directory/lg.jpg";
-import chartjpg from "../../media/chart-app/desktop.jpg";
-import guessThePhrasejpg from "../../media/guess-the-phrase/game.jpg";
-import galleryjpg from "../../media/gallery/desktop.jpg";
-import ccojpg from "../../media/cco/cco.jpg";
+import employeeDirectoryjpg from "../../media/images/thumbnails/proj8_576x320.jpg";
+import chartjpg from "../../media/images/thumbnails/proj7_576x320.jpg";
+import guessThePhrasejpg from "../../media/images/thumbnails/proj6_576x320.jpg";
+import galleryjpg from "../../media/images/thumbnails/proj5_576x320.jpg";
+import ccojpg from "../../media/images/thumbnails/cco_576x320.jpg";
 
 class CaseProvider extends React.Component {
   state = {

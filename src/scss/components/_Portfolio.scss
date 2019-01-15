@@ -1,4 +1,4 @@
 .portfolio {
   padding: 10px;
-  @include flex();
+  @include flex($wrap: wrap, $align: flex-start);
 }

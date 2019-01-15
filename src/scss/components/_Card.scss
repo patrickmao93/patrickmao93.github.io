@@ -32,13 +32,24 @@
   &__content {
     position: relative;
     overflow: hidden;
-    .img {
+    &__img {
+      position: relative;
       border-radius: 8px 8px 0 0;
-      max-height: 400px;
       overflow: hidden;
-      img {
-        width: auto;
-        max-height: 400px;
+      @include flex($just: center);
+    }
+    &__ribbon {
+      position: absolute;
+      text-align: center;
+      right: -50px;
+      top: 20px;
+      background: rgba($color: $color-background-focus, $alpha: 0.9);
+      color: white;
+      padding: 10px 50px;
+      transform: rotate(45deg);
+
+      &--Personal {
+        background: rgba($color: $color-primary, $alpha: 0.9);
       }
     }
   }

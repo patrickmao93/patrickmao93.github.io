@@ -8,6 +8,7 @@
   font-size: 0.75rem;
   background: $color-background-primary;
   color: $color-font-inverse;
+  z-index: 10002;
   @include flex();
   .signal {
     color: #28a745;

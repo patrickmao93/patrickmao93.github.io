@@ -1,13 +1,20 @@
 .nav {
   background: $color-background-secondary;
-  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100vw;
   z-index: 10000;
+  @include flex();
+  @include media("lg") {
+    width: calc(100vw - 58px);
+  }
   &__link {
     display: inline-block;
     padding: 14px;
     transition: 0.2s ease;
     border-bottom: 3px solid transparent;
+    white-space: nowrap;
 
     &:hover {
       .fa-times {
@@ -52,10 +59,8 @@
     .fa-file-alt {
       color: #69c673;
     }
-
-    // span {
-    //   display: inline-block;
-    //   margin-left: 8px;
-    // }
+  }
+  &::-webkit-scrollbar {
+    display: none;
   }
 }

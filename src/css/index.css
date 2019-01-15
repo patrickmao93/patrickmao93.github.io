@@ -195,8 +195,15 @@ em {
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
-  grid-template-columns: auto 1fr;
-  grid-template-areas: "header header" "sidebar viewport" "footer footer";
+  grid-template-columns: 1fr;
+  grid-template-areas: "header" "viewport" "footer";
+}
+@media (min-width: 1024px) {
+  .app {
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 58px 1fr;
+    grid-template-areas: "header header" "sidebar viewport" "footer footer";
+  }
 }
 
 .header {
@@ -221,17 +228,31 @@ em {
   margin-left: 15px;
   color: white;
 }
+
 .nav {
   background: white;
-  width: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100vw;
   z-index: 10000;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  .nav {
+    width: calc(100vw - 58px);
+  }
 }
 .nav__link {
   display: inline-block;
   padding: 14px;
   transition: 0.2s ease;
   border-bottom: 3px solid transparent;
+  white-space: nowrap;
 }
 .nav__link:hover .fa-times {
   opacity: 0.5;
@@ -261,11 +282,14 @@ em {
 .nav__link .fa-file-alt {
   color: #69c673;
 }
+.nav::-webkit-scrollbar {
+  display: none;
+}
 
 .viewport {
   grid-area: viewport;
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .viewport {
     display: flex;
     flex-direction: column;
@@ -277,10 +301,10 @@ em {
 
 .content {
   width: 100%;
-  height: calc(100vh - 105px);
+  height: calc(100vh - 107px);
   padding: 10px;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
   color: #5a5a5a;
 }
@@ -298,6 +322,7 @@ em {
   font-size: 0.75rem;
   background: #202124;
   color: #ccc;
+  z-index: 10002;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -314,7 +339,7 @@ em {
 .footer__right .fa-react {
   color: #72ddfa;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .footer__right {
     display: block;
   }
@@ -396,7 +421,7 @@ em {
   color: #5a5a5a;
   grid-area: sidebar;
 }
-@media (min-width: 480px) {
+@media (min-width: 1024px) {
   .sidebar {
     display: flex;
     flex-direction: column;
@@ -565,7 +590,7 @@ em {
 .case {
   max-width: 1000px;
 }
-@media (min-width: 900px) {
+@media (min-width: 1024px) {
   .case {
     padding: 20px;
   }

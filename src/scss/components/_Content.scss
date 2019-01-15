@@ -1,9 +1,9 @@
 .content {
   width: 100%;
-  height: calc(100vh - 105px);
+  height: calc(100vh - 107px);
   padding: 10px;
   position: relative;
-  overflow: scroll;
+  overflow: auto;
   -webkit-overflow-scrolling: touch;
   color: $color-font-secondary;
 

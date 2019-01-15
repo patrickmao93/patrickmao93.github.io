@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ScrollArea from "react-scrollbar";
 
 const renderCloseIcon = (tab, onClickClose) => {
   if (tab.closable) {
@@ -20,11 +21,11 @@ const renderTabs = ({ tabs, onClickClose }) => {
     <NavLink
       key={tab.to}
       to={tab.to}
-      className="nav__link"
-      activeClassName="nav__link--active"
+      className="nav__links__link"
+      activeClassName="nav__links__link--active"
       exact
     >
-      <span className="nav__link__content">
+      <span className="nav__links__link__content">
         <i className={tab.icon} />
         <span>
           {tab.name} {renderCloseIcon(tab, onClickClose)}
@@ -36,7 +37,16 @@ const renderTabs = ({ tabs, onClickClose }) => {
 
 class Nav extends React.Component {
   render() {
-    return <nav className="nav">{renderTabs(this.props)}</nav>;
+    return (
+      <ScrollArea
+        speed={0.8}
+        className="nav"
+        contentClassName="nav__links"
+        vertical={false}
+      >
+        {renderTabs(this.props)}
+      </ScrollArea>
+    );
   }
 }
 

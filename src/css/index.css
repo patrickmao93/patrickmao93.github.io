@@ -231,59 +231,53 @@ em {
 
 .nav {
   background: white;
-  overflow-x: scroll;
-  overflow-y: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100vw;
   z-index: 10000;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: nowrap;
-  align-items: center;
 }
 @media (min-width: 1024px) {
   .nav {
     width: calc(100vw - 58px);
   }
 }
-.nav__link {
+.nav__links {
+  display: inline-block;
+  white-space: nowrap;
+}
+.nav__links__link {
   display: inline-block;
   padding: 14px;
   transition: 0.2s ease;
   border-bottom: 3px solid transparent;
   white-space: nowrap;
 }
-.nav__link:hover .fa-times {
+.nav__links__link:hover .fa-times {
   opacity: 0.5;
 }
-.nav__link:hover .fa-times:hover {
+.nav__links__link:hover .fa-times:hover {
   opacity: 1;
 }
-.nav__link__content span {
+.nav__links__link__content span {
   margin: 0 8px;
 }
-.nav__link__content .fa-times {
+.nav__links__link__content .fa-times {
   margin-right: 0;
   margin-left: 5px;
   font-size: 0.8em;
   opacity: 0;
 }
-.nav__link--active {
+.nav__links__link--active {
   color: #202124;
   border-bottom: 3px solid #007acc;
 }
-.nav__link--active .fa-times {
+.nav__links__link--active .fa-times {
   opacity: 0.5;
 }
-.nav__link .fa-folder-open {
+.nav__links__link .fa-folder-open {
   color: orange;
 }
-.nav__link .fa-file-alt {
+.nav__links__link .fa-file-alt {
   color: #69c673;
-}
-.nav::-webkit-scrollbar {
-  display: none;
 }
 
 .viewport {

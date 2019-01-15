@@ -1,66 +1,65 @@
 .nav {
   background: $color-background-secondary;
-  overflow-x: scroll;
-  overflow-y: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   width: 100vw;
   z-index: 10000;
-  @include flex();
   @include media("lg") {
     width: calc(100vw - 58px);
   }
-  &__link {
+
+  &__links {
     display: inline-block;
-    padding: 14px;
-    transition: 0.2s ease;
-    border-bottom: 3px solid transparent;
     white-space: nowrap;
+    &__link {
+      display: inline-block;
+      padding: 14px;
+      transition: 0.2s ease;
+      border-bottom: 3px solid transparent;
+      white-space: nowrap;
 
-    &:hover {
-      .fa-times {
-        opacity: 0.5;
+      &:hover {
+        .fa-times {
+          opacity: 0.5;
 
-        &:hover {
-          opacity: 1;
+          &:hover {
+            opacity: 1;
+          }
         }
       }
-    }
 
-    &__content {
-      span {
-        margin: 0 8px;
+      &__content {
+        span {
+          margin: 0 8px;
+        }
+        .fa-times {
+          margin-right: 0;
+          margin-left: 5px;
+          font-size: 0.8em;
+          opacity: 0;
+        }
       }
-      .fa-times {
-        margin-right: 0;
-        margin-left: 5px;
-        font-size: 0.8em;
-        opacity: 0;
+
+      &--active {
+        color: $color-font-highlight;
+        // background: $color-background-secondary;
+        border-bottom: 3px solid $color-primary;
+
+        // &:hover {
+        //   background: $color-background-secondary;
+        // }
+
+        .fa-times {
+          opacity: 0.5;
+        }
+      }
+
+      .fa-folder-open {
+        color: orange;
+      }
+
+      .fa-file-alt {
+        color: #69c673;
       }
     }
-
-    &--active {
-      color: $color-font-highlight;
-      // background: $color-background-secondary;
-      border-bottom: 3px solid $color-primary;
-
-      // &:hover {
-      //   background: $color-background-secondary;
-      // }
-
-      .fa-times {
-        opacity: 0.5;
-      }
-    }
-
-    .fa-folder-open {
-      color: orange;
-    }
-
-    .fa-file-alt {
-      color: #69c673;
-    }
-  }
-  &::-webkit-scrollbar {
-    display: none;
   }
 }

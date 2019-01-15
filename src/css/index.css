@@ -294,11 +294,11 @@ em {
 }
 
 .content {
-  width: 100%;
   height: calc(100vh - 107px);
   padding: 10px;
   position: relative;
-  overflow: auto;
+  overflow-y: auto;
+  width: 100vw;
   -webkit-overflow-scrolling: touch;
   color: #5a5a5a;
 }
@@ -582,6 +582,8 @@ em {
 }
 
 .case {
+  width: 95%;
+  margin: auto;
   max-width: 1000px;
 }
 @media (min-width: 1024px) {

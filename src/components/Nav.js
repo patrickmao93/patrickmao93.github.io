@@ -42,6 +42,12 @@ class Nav extends React.Component {
         speed={0.8}
         className="nav"
         contentClassName="nav__links"
+        horizontalContainerStyle={{
+          height: "3px",
+          position: "absolute",
+          bottom: "0px"
+        }}
+        horizontalScrollbarStyle={{ height: "3px" }}
         vertical={false}
       >
         {renderTabs(this.props)}

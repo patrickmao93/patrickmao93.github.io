@@ -1,6 +1,7 @@
 .case {
+  width: 95%;
+  margin: auto;
   max-width: 1000px;
-
   @include media("lg") {
     padding: 20px;
   }

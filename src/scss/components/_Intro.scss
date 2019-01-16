@@ -5,7 +5,7 @@
   perspective: 1000px;
   &__content {
     padding: 50px 100px 50px 80px;
-    background: rgba($color: $color-background-card, $alpha: 0.8);
+    background: rgba($color: $color-background-card, $alpha: 0.9);
     @include flex($just: center);
     position: relative;
     margin-right: 20%;

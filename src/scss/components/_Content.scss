@@ -4,6 +4,9 @@
   position: relative;
   overflow-y: auto;
   width: 100vw;
+  @include media("lg") {
+    width: calc(100vw - 58px);
+  }
   -webkit-overflow-scrolling: touch;
   color: $color-font-secondary;
 

@@ -2,6 +2,7 @@
   width: 95%;
   margin: auto;
   max-width: 1000px;
+  padding-top: 30px;
   @include media("lg") {
     padding: 20px;
   }

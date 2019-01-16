@@ -302,6 +302,11 @@ em {
   -webkit-overflow-scrolling: touch;
   color: #5a5a5a;
 }
+@media (min-width: 1024px) {
+  .content {
+    width: calc(100vw - 58px);
+  }
+}
 .content a {
   color: #528bff;
 }
@@ -449,7 +454,7 @@ em {
 }
 .intro__content {
   padding: 50px 100px 50px 80px;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -520,58 +525,6 @@ em {
   align-items: flex-start;
 }
 
-.code {
-  position: absolute;
-  top: 5;
-  bottom: 10;
-  padding: 5px;
-  overflow: hidden;
-  height: 100%;
-}
-.code .line {
-  opacity: 0.2;
-  display: inline-block;
-  height: 16px;
-  border-radius: 4px;
-  margin: 10px;
-  transition: 1s ease;
-  -webkit-filter: grayscale(1);
-  filter: grayscale(1);
-}
-.code .w-1 {
-  width: 2%;
-}
-.code .w-2 {
-  width: 4%;
-}
-.code .w-3 {
-  width: 6%;
-}
-.code .w-4 {
-  width: 8%;
-}
-.code .w-5 {
-  width: 10%;
-}
-.code .blue {
-  background: #61afef;
-}
-.code .purple {
-  background: #c678dd;
-}
-.code .green {
-  background: #89c379;
-}
-.code .yellow {
-  background: #e5c07b;
-}
-.code .white {
-  background: #abb2a0;
-}
-.code .red {
-  background: #e06c62;
-}
-
 .portfolio {
   padding: 10px;
   display: flex;
@@ -585,6 +538,7 @@ em {
   width: 95%;
   margin: auto;
   max-width: 1000px;
+  padding-top: 30px;
 }
 @media (min-width: 1024px) {
   .case {
@@ -660,6 +614,65 @@ em {
 .resume__card__info__content span {
   display: block;
   line-height: 1.5;
+}
+
+.code {
+  position: absolute;
+  top: 5;
+  bottom: 10;
+  padding: 5px;
+  overflow: hidden;
+  height: 100%;
+}
+.code .line {
+  opacity: 0.2;
+  display: inline-block;
+  height: 22px;
+  border-radius: 11px;
+  margin: 11px;
+  transition: 1s ease;
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+}
+@media (min-width: 1024px) {
+  .code .line {
+    height: 32px;
+    border-radius: 16px;
+    margin: 16px;
+  }
+}
+.code .w-1 {
+  width: 50px;
+}
+.code .w-2 {
+  width: 90px;
+}
+.code .w-3 {
+  width: 130px;
+}
+.code .w-4 {
+  width: 170px;
+}
+.code .w-5 {
+  width: 210px;
+}
+.code .blue {
+  background: #61afef;
+}
+.code .purple {
+  background: #c678dd;
+}
+.code .green {
+  background: #89c379;
+}
+.code .yellow {
+  background: #e5c07b;
+}
+.code .white {
+  background: #abb2a0;
+}
+.code .red {
+  background: #e06c62;
 }
 
 .divider {

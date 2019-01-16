@@ -15,9 +15,14 @@ $red: #e06c62;
   .line {
     opacity: 0.2;
     display: inline-block;
-    height: 16px;
-    border-radius: 4px;
-    margin: 10px;
+    height: 22px;
+    border-radius: 11px;
+    margin: 11px;
+    @include media("lg") {
+      height: 32px;
+      border-radius: 16px;
+      margin: 16px;
+    }
     transition: 1s ease;
     -webkit-filter: grayscale(1);
     filter: grayscale(1);
@@ -25,7 +30,7 @@ $red: #e06c62;
 
   @for $var from 1 through 5 {
     .w-#{$var} {
-      width: #{$var * 2%};
+      width: #{$var * 40px + 10px};
     }
   }
 

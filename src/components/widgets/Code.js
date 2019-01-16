@@ -36,7 +36,7 @@ class Code extends React.Component {
   render() {
     return (
       <div ref={this.ref} className="code">
-        {this.generateLines(320)}
+        {this.generateLines(180)}
       </div>
     );
   }

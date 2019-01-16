@@ -26,17 +26,15 @@
     &:hover {
       box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.2),
         0 2px 8px 4px rgba(60, 64, 67, 0.1);
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
   }
 
-  &__header {
+  &__title {
     h2 {
       font-size: 1.2rem;
-      margin: 14px 0;
+      margin-bottom: 24px;
       line-height: 1.2;
-      border-left: 4px solid $color-primary;
-      padding-left: 10px;
     }
   }
 
@@ -64,7 +62,7 @@
       transform: rotate(45deg);
 
       @include media("md") {
-        display: block;
+        display: none;
       }
 
       &--Personal {

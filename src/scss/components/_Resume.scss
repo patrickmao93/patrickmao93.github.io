@@ -1,4 +1,7 @@
 .resume {
+  @include media("lg") {
+    padding: 20px;
+  }
   &__card {
     padding: 30px;
     @include flex();

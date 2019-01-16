@@ -225,14 +225,12 @@ em {
 }
 .card--interactable:hover {
   box-shadow: 0 1px 3px 1px rgba(60, 64, 67, 0.2), 0 2px 8px 4px rgba(60, 64, 67, 0.1);
-  transform: translateY(-3px);
+  transform: translateY(-2px);
 }
-.card__header h2 {
+.card__title h2 {
   font-size: 1.2rem;
-  margin: 14px 0;
+  margin-bottom: 24px;
   line-height: 1.2;
-  border-left: 4px solid #007acc;
-  padding-left: 10px;
 }
 .card__content {
   position: relative;
@@ -264,7 +262,7 @@ em {
 }
 @media (min-width: 768px) {
   .card__content__ribbon {
-    display: block;
+    display: none;
   }
 }
 .card__content__ribbon--Personal {
@@ -632,6 +630,11 @@ em {
   margin: 6px 0;
 }
 
+@media (min-width: 1024px) {
+  .resume {
+    padding: 20px;
+  }
+}
 .resume__card {
   padding: 30px;
   display: flex;
@@ -761,6 +764,11 @@ em {
   width: auto;
 }
 
+@media (min-width: 1024px) {
+  .resume {
+    padding: 20px;
+  }
+}
 .resume__card {
   padding: 30px;
   display: flex;

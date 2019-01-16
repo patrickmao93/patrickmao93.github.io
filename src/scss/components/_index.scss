@@ -1,10 +1,13 @@
+@import "./widgets/Card";
+@import "./widgets/Code";
+@import "./widgets/Divider";
+@import "./widgets/Pill";
 @import "App";
 @import "Header";
 @import "Nav";
 @import "Viewport";
 @import "Content";
 @import "Footer";
-@import "Card";
 @import "Sidebar";
 @import "Intro";
 @import "Resume";
@@ -12,6 +15,3 @@
 @import "Portfolio";
 @import "Case";
 @import "Resume";
-@import "./widgets/Code";
-@import "./widgets/Divider";
-@import "./widgets/Pill";

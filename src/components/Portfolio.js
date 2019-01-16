@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import CaseContext from "./contexts/CaseContext";
 
-import Card from "./Card";
+import Card from "./widgets/Card";
 
 const Portfolio = props => {
   return (
@@ -14,6 +14,7 @@ const Portfolio = props => {
             <>
               <Link
                 to={state.CCO.tabInfo.to}
+                className="link-card"
                 onClick={() => props.onClickCase(state.CCO.tabInfo)}
               >
                 <Card
@@ -34,6 +35,7 @@ const Portfolio = props => {
 
               <Link
                 to={state.employeeDirectory.tabInfo.to}
+                className="link-card"
                 onClick={() =>
                   props.onClickCase(state.employeeDirectory.tabInfo)
                 }
@@ -49,6 +51,7 @@ const Portfolio = props => {
 
               <Link
                 to={state.chartApp.tabInfo.to}
+                className="link-card"
                 onClick={() => props.onClickCase(state.chartApp.tabInfo)}
               >
                 <Card
@@ -62,6 +65,7 @@ const Portfolio = props => {
 
               <Link
                 to={state.guessThePhrase.tabInfo.to}
+                className="link-card"
                 onClick={() => props.onClickCase(state.guessThePhrase.tabInfo)}
               >
                 <Card
@@ -75,6 +79,7 @@ const Portfolio = props => {
 
               <Link
                 to={state.photoGallery.tabInfo.to}
+                className="link-card"
                 onClick={() => props.onClickCase(state.photoGallery.tabInfo)}
               >
                 <Card

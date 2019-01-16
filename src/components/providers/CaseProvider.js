@@ -11,7 +11,7 @@ import ccojpg from "../../media/images/thumbnails/cco_576x320.jpg";
 class CaseProvider extends React.Component {
   state = {
     CCO: {
-      header: "Purdue University - Center for Career Opportunities Website V4",
+      header: "Purdue University Center for Career Opportunities Website V4",
       imgUrl: ccojpg,
       tabInfo: {
         name: "PurdueCCO Site",

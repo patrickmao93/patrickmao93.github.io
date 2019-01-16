@@ -1,7 +1,7 @@
 import React from "react";
 
 import Pill from "./../widgets/Pill";
-import Card from "../Card";
+import Card from "../widgets/Card";
 
 import lg from "../../media/images/proj8_1440x800.jpg";
 import md from "../../media/images/proj8_1024x800.jpg";

@@ -1,4 +1,9 @@
 .portfolio {
-  padding: 10px;
-  @include flex($wrap: wrap, $align: flex-start);
+  @include flex($dir: column);
+  @include media("md") {
+    padding: 10px;
+  }
+  @include media("lg") {
+    @include flex($wrap: wrap, $align: flex-start);
+  }
 }

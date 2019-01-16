@@ -7,6 +7,10 @@
   src: url(../fonts/segoeui.ttf);
 }
 
+body {
+  min-width: $body-min-width;
+}
+
 * {
   font-size: 16px;
   box-sizing: border-box;

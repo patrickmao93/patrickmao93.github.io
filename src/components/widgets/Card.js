@@ -1,7 +1,7 @@
 import React from "react";
 import { Spring, config } from "react-spring";
 
-import Pill from "./widgets/Pill";
+import Pill from "./Pill";
 
 const renderPills = pills => {
   if (!pills) {

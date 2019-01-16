@@ -50,5 +50,9 @@
     &__cards {
       @include flex();
     }
+
+    .card {
+      width: auto;
+    }
   }
 }

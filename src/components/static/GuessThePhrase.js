@@ -1,7 +1,7 @@
 import React from "react";
 
 import Pill from "./../widgets/Pill";
-import Card from "../Card";
+import Card from "../widgets/Card";
 
 import playing from "../../media/images/proj6_1440x800.jpg";
 import ending from "../../media/images/proj6_1440x800_1.jpg";

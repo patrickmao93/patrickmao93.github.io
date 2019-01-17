@@ -3,7 +3,7 @@ import { Route, Switch } from "react-router-dom";
 
 import Intro from "./Intro";
 import Portfolio from "./Portfolio";
-import Resume from "./static/Resume";
+import Resume from "./Resume";
 import Case from "./Case";
 
 class Content extends React.Component {

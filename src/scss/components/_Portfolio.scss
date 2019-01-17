@@ -2,7 +2,7 @@
   @include flex($dir: column);
   @include media("md") {
     padding: 10px;
-    @include flex($wrap: wrap, $align: flex-start);
+    @include flex($wrap: wrap);
   }
   .link-card {
     margin: 10px;

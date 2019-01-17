@@ -2,6 +2,8 @@ $font-family-primary: "Segoe UI", sans-serif;
 $font-family-primary-italic: "Segoe UI Italic", sans-serif;
 $font-family-secondary: "Consola", sans-serif;
 
+$font-size-main-header: 1.6rem;
+
 //light theme
 $color-background-primary: #202124;
 $color-background-secondary: white;
@@ -18,8 +20,10 @@ $color-border-secondary: #181a1f;
 $color-background-focus: #383b41;
 
 $color-primary: #007acc;
+$color-primary-light: #5ca9ff;
+$color-primary-dark: #004f9b;
 
-$color-font-link: #528bff;
+$color-font-link: #007acc;
 
 $breakpoint-md: 768px;
 $breakpoint-lg: 1024px;

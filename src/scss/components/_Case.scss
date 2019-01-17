@@ -1,16 +1,5 @@
 .case {
-  width: 100%;
-  margin: auto;
-  padding: 30px;
-  max-width: 1000px;
-  box-shadow: 0 0 50px rgba($color: #000000, $alpha: 0.05);
-  @include media("md") {
-    padding: 40px;
-    width: 90%;
-  }
-  @include media("lg") {
-    padding: 70px;
-  }
+  @extend %page;
   &__header {
     margin-bottom: 40px;
     padding-bottom: 10px;
@@ -35,6 +24,7 @@
       }
       @include media("md") {
         flex-direction: row;
+        align-items: center;
         &__links {
           margin-left: auto;
           width: auto;

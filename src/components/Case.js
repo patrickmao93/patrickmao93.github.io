@@ -1,4 +1,5 @@
 import React from "react";
+import { Spring } from "react-spring";
 
 import CCO from "./static/CCO";
 import EmployeeDirectory from "./static/EmployeeDirectory";
@@ -26,7 +27,18 @@ class Case extends React.Component {
   };
 
   render() {
-    return <div className="case">{this.renderContent()}</div>;
+    return (
+      <Spring
+        from={{ opacity: 0, top: "80px" }}
+        to={{ opacity: 1, top: "40px" }}
+      >
+        {props => (
+          <div className="case" style={props}>
+            {this.renderContent()}
+          </div>
+        )}
+      </Spring>
+    );
   }
 }
 

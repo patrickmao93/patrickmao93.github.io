@@ -2,8 +2,24 @@
   @include flex($dir: column);
   @include media("md") {
     padding: 10px;
-  }
-  @include media("lg") {
     @include flex($wrap: wrap, $align: flex-start);
+  }
+  .link-card {
+    margin: 10px;
+    @include media("md") {
+      margin: 30px;
+    }
+    .card {
+      width: 90vw;
+      @include media("md") {
+        width: calc(50vw - 90px);
+      }
+      @include media("lg") {
+        width: calc((100vw - 58px) / 3 - 80px);
+      }
+      @include media("xl") {
+        width: calc((100vw - 58px) / 4 - 90px);
+      }
+    }
   }
 }

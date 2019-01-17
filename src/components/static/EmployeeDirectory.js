@@ -34,38 +34,45 @@ const EmployeeDirectory = () => {
         </div>
       </div>
       <div className="case__content">
-        <h2>Summary</h2>
-        <p className="case__content__paragraph">
-          This was the project #8 of the{" "}
-          <a href="https://teamtreehouse.com/techdegree/front-end-web-development">
-            Treehouse Front End Web Development Techdegree
-          </a>
-          . <br />
-          The purpose of this project is to help myself practicing the concept
-          of utilizing the <em>fetch</em> API to pull data from an online API
-          asynchronously. It also helped me understand <em>Promise</em>. <br />
-          What this project really showed/taught me was how easily front end
-          code can get messy and hard to maintain when it comes to data handling
-          without a framework. I already see myself creating several global
-          variables that could end up being hazardous in the future if the
-          project scale grows. <br />
-          After finishing this project, I re-wrote it completely with React.{" "}
-          <a href="https://github.com/patrickmao93/EmployeeDirectory-React">
-            Check it out
-          </a>
-          . <br />
-          After doing a react version of this project, I took one step further
-          and implemented this project again using react and redux.{" "}
-          <a href="https://github.com/patrickmao93/Employee-directory-with-redux">
-            Check it out
-          </a>
-        </p>
-        <h2>Screenshots</h2>
-        <Card imgUrl={sm} />
-        <Card imgUrl={md} />
-        <Card imgUrl={lg} />
-        <Card imgUrl={modal} />
-        <Card imgUrl={loading} />
+        <section>
+          <h2>Summary</h2>
+          <p className="case__content__paragraph">
+            This was the project #8 of the{" "}
+            <a href="https://teamtreehouse.com/techdegree/front-end-web-development">
+              Treehouse Front End Web Development Techdegree
+            </a>
+            . <br />
+            The purpose of this project is to help myself practicing the concept
+            of utilizing the <em>fetch</em> API to pull data from an online API
+            asynchronously. It also helped me understand <em>Promise</em>.{" "}
+            <br />
+            What this project really showed/taught me was how easily front end
+            code can get messy and hard to maintain when it comes to data
+            handling without a framework. I already see myself creating several
+            global variables that could end up being hazardous in the future if
+            the project scale grows. <br />
+            After finishing this project, I re-wrote it completely with React.{" "}
+            <a href="https://github.com/patrickmao93/EmployeeDirectory-React">
+              Check it out
+            </a>
+            . <br />
+            After doing a react version of this project, I took one step further
+            and implemented this project again using react and redux.{" "}
+            <a href="https://github.com/patrickmao93/Employee-directory-with-redux">
+              Check it out
+            </a>
+          </p>
+        </section>
+        <section>
+          <h2>Screenshots</h2>
+          <div className="case__content__cards">
+            <Card imgUrl={sm} />
+            <Card imgUrl={md} />
+            <Card imgUrl={lg} />
+            <Card imgUrl={modal} />
+            <Card imgUrl={loading} />
+          </div>
+        </section>
       </div>
     </div>
   );

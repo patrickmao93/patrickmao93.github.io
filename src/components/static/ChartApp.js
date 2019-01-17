@@ -31,34 +31,41 @@ const ChartApp = () => {
         </div>
       </div>
       <div className="case__content">
-        <h2>Summary</h2>
-        <p className="case__content__paragraph">
-          This was the project #7 of the{" "}
-          <a href="https://teamtreehouse.com/techdegree/front-end-web-development">
-            Treehouse Front End Web Development Techdegree
-          </a>
-          . <br />
-          CSS Grid is just awesomeness. What even better is when combining CSS
-          Grid with flexbox. These two tools really makes laying out web apps a
-          breeze. Grid is incredibly versatile when it comes to 2D layouts, but
-          sometimes I find it to be tedious when a container just contains
-          several elements in one direction, and this is where flexbox comes in
-          handy! In this project, you will see the combined power of CSS Grid
-          and Flexbox, resulting in fully responsive page layouts.
-        </p>
-        <h2>My Learnings</h2>
-        <ul className="case__content__list">
-          <li>CSS Grid layout</li>
-          <li>Using SVG graphics</li>
-          <li>Chart.js for Interactive Charts</li>
-          <li>Local Storage</li>
-          <li>Responsive web design</li>
-        </ul>
-
-        <h2>Screenshots</h2>
-        <Card imgUrl={sm} />
-        <Card imgUrl={md} />
-        <Card imgUrl={lg} />
+        <section>
+          <h2>Summary</h2>
+          <p className="case__content__paragraph">
+            This was the project #7 of the{" "}
+            <a href="https://teamtreehouse.com/techdegree/front-end-web-development">
+              Treehouse Front End Web Development Techdegree
+            </a>
+            . <br />
+            CSS Grid is just awesomeness. What even better is when combining CSS
+            Grid with flexbox. These two tools really makes laying out web apps
+            a breeze. Grid is incredibly versatile when it comes to 2D layouts,
+            but sometimes I find it to be tedious when a container just contains
+            several elements in one direction, and this is where flexbox comes
+            in handy! In this project, you will see the combined power of CSS
+            Grid and Flexbox, resulting in fully responsive page layouts.
+          </p>
+        </section>
+        <section>
+          <h2>My Learnings</h2>
+          <ul className="case__content__list">
+            <li>CSS Grid layout</li>
+            <li>Using SVG graphics</li>
+            <li>Chart.js for Interactive Charts</li>
+            <li>Local Storage</li>
+            <li>Responsive web design</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Screenshots</h2>
+          <div className="case__content__cards">
+            <Card imgUrl={sm} />
+            <Card imgUrl={md} />
+            <Card imgUrl={lg} />
+          </div>
+        </section>
       </div>
     </div>
   );

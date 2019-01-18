@@ -33,6 +33,11 @@ em {
   font-family: $font-family-secondary;
 }
 
+strong {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .fa,
 .fab,
 .fas,
@@ -85,4 +90,8 @@ em {
 
 .fa-react {
   color: #72ddfa;
+}
+
+.fa-js {
+  color: #f5dc4e;
 }

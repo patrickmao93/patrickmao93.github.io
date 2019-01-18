@@ -185,6 +185,11 @@ em {
   font-family: "Consola", sans-serif;
 }
 
+strong {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .fa,
 .fab,
 .fas,
@@ -219,6 +224,10 @@ em {
 
 .fa-react {
   color: #72ddfa;
+}
+
+.fa-js {
+  color: #f5dc4e;
 }
 
 .card {
@@ -675,23 +684,37 @@ em {
 .resume__header > section {
   margin-bottom: 30px;
 }
-.resume__header .contact-section {
-  font-family: "Arial Narrow", Helvetica, sans-serif;
-  opacity: 0.9;
+.resume__header__section {
   font-size: 14px;
 }
-.resume__header .contact-section__info {
+.resume__header__section__info {
+  font-family: "Arial Narrow", Helvetica, sans-serif;
   display: block;
   margin-bottom: 6px;
 }
-.resume__header .contact-section__info .fas {
+.resume__header__section__info .fas {
   display: inline-block;
   width: 20px;
   text-align: center;
   font-size: 1rem;
 }
-.resume__header .tech-section i {
-  font-size: 2rem;
+.resume__header__section__icons {
+  font-size: 3rem;
+}
+.resume__header__section__icons i {
+  margin: 10px;
+}
+.resume__header__section__icons .fa-react {
+  color: #72ddfa;
+}
+.resume__header__section__icons .fa-js-square {
+  color: #f5dc4e;
+}
+.resume__header__section__icons .fa-html5 {
+  color: #ef652a;
+}
+.resume__header__section__icons .fa-css3-alt {
+  color: #33a9dc;
 }
 .resume__scroll {
   overflow: auto;
@@ -954,23 +977,37 @@ em {
 .resume__header > section {
   margin-bottom: 30px;
 }
-.resume__header .contact-section {
-  font-family: "Arial Narrow", Helvetica, sans-serif;
-  opacity: 0.9;
+.resume__header__section {
   font-size: 14px;
 }
-.resume__header .contact-section__info {
+.resume__header__section__info {
+  font-family: "Arial Narrow", Helvetica, sans-serif;
   display: block;
   margin-bottom: 6px;
 }
-.resume__header .contact-section__info .fas {
+.resume__header__section__info .fas {
   display: inline-block;
   width: 20px;
   text-align: center;
   font-size: 1rem;
 }
-.resume__header .tech-section i {
-  font-size: 2rem;
+.resume__header__section__icons {
+  font-size: 3rem;
+}
+.resume__header__section__icons i {
+  margin: 10px;
+}
+.resume__header__section__icons .fa-react {
+  color: #72ddfa;
+}
+.resume__header__section__icons .fa-js-square {
+  color: #f5dc4e;
+}
+.resume__header__section__icons .fa-html5 {
+  color: #ef652a;
+}
+.resume__header__section__icons .fa-css3-alt {
+  color: #33a9dc;
 }
 .resume__scroll {
   overflow: auto;

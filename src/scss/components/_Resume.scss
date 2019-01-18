@@ -3,7 +3,7 @@
   height: calc(100vh - 107px);
 
   &__header {
-    color: white;
+    color: $color-font-inverse;
     padding: 50px;
     background: #155e91;
     height: 100%;
@@ -28,11 +28,10 @@
       margin-bottom: 30px;
     }
 
-    .contact-section {
-      font-family: "Arial Narrow", Helvetica, sans-serif;
-      opacity: 0.9;
+    &__section {
       font-size: 14px;
       &__info {
+        font-family: "Arial Narrow", Helvetica, sans-serif;
         display: block;
         margin-bottom: 6px;
         .fas {
@@ -42,10 +41,23 @@
           font-size: 1rem;
         }
       }
-    }
-    .tech-section {
-      i {
-        font-size: 2rem;
+      &__icons {
+        font-size: 3rem;
+        i {
+          margin: 10px;
+        }
+        .fa-react {
+          color: #72ddfa;
+        }
+        .fa-js-square {
+          color: #f5dc4e;
+        }
+        .fa-html5 {
+          color: #ef652a;
+        }
+        .fa-css3-alt {
+          color: #33a9dc;
+        }
       }
     }
   }

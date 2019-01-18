@@ -43,7 +43,7 @@ const Resume = () => {
           {props => (
             <div className="page" style={props}>
               <div className="page__download">
-                <a href="/">
+                <a href="/" download>
                   <i className="fas fa-file-download" />
                   Download as Word Document
                 </a>
@@ -123,7 +123,8 @@ const Resume = () => {
                   <h2>Front-End Development Techdegree</h2>
                   <div className="page__section__info">
                     <h3>
-                      <span className="company">Treehouse</span>
+                      <span className="company">Treehouse</span>, Online Coding
+                      Bootcamp
                     </h3>
                   </div>
                 </section>
@@ -144,7 +145,7 @@ const Resume = () => {
                 <section>
                   <h3>Development Skills</h3>
                   <ul>
-                    <li>Proficient with version contorl system such as Git</li>
+                    <li>Proficient with version control system such as Git</li>
                     <li>
                       Proficient with workflow tools - webpack, gulp, npm, grunt
                     </li>

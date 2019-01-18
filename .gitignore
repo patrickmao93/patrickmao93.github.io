@@ -5,9 +5,6 @@
 /.pnp
 .pnp.js
 
-# css
-/.css
-
 # backup
 backup/
 

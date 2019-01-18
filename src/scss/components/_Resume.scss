@@ -4,11 +4,50 @@
 
   &__header {
     color: white;
-    font-size: 1.6rem;
-    padding: 60px;
+    padding: 50px;
     background: #155e91;
     height: 100%;
     width: 400px;
+
+    h1 {
+      font-size: 1.6rem;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+    }
+    h3 {
+      opacity: 0.6;
+      font-family: "Arial Narrow", Helvetica, sans-serif;
+      font-size: 1rem;
+      margin-bottom: 14px;
+    }
+
+    > section {
+      margin-bottom: 30px;
+    }
+
+    .contact-section {
+      font-family: "Arial Narrow", Helvetica, sans-serif;
+      opacity: 0.9;
+      font-size: 14px;
+      &__info {
+        display: block;
+        margin-bottom: 6px;
+        .fas {
+          display: inline-block;
+          width: 20px;
+          text-align: center;
+          font-size: 1rem;
+        }
+      }
+    }
+    .tech-section {
+      i {
+        font-size: 2rem;
+      }
+    }
   }
 
   &__scroll {
@@ -16,7 +55,7 @@
     height: calc(100vh - 107px);
     flex: 1;
     height: 100%;
-    &__page {
+    .page {
       @extend %page;
       h2,
       h3 {
@@ -35,6 +74,21 @@
         font-size: 1rem;
         .company {
           font-weight: bold;
+        }
+      }
+
+      &__download {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: -20px;
+        box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.1);
+        a {
+          color: $color-font-inverse;
+          background: $color-primary;
+          white-space: nowrap;
+          display: inline-block;
+          padding: 10px;
         }
       }
       &__work {

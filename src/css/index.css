@@ -699,6 +699,9 @@ em {
   flex: 1;
   height: 100%;
 }
+.resume__scroll .page {
+  margin-bottom: 50px;
+}
 .resume__scroll .page h2,
 .resume__scroll .page h3 {
   margin-bottom: 10px;
@@ -974,6 +977,9 @@ em {
   height: calc(100vh - 107px);
   flex: 1;
   height: 100%;
+}
+.resume__scroll .page {
+  margin-bottom: 50px;
 }
 .resume__scroll .page h2,
 .resume__scroll .page h3 {

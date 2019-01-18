@@ -52,7 +52,7 @@ const Resume = () => {
                 <h1>Work Experience</h1>
                 <section>
                   <h3 className="page__section__date">OCT 2017 - MAR 2018</h3>
-                  <h2>Industrial Designer - LED light fixtures</h2>
+                  <h2>Industrial Designer - LED light fixture designer</h2>
                   <div className="page__section__info">
                     <h3>
                       <span className="company">Suzhou Powerhouse LLC.</span>,
@@ -83,24 +83,35 @@ const Resume = () => {
                       Lafayette, IN, USA
                     </h3>
                     <ul>
-                      <li>dasda</li>
+                      <li>
+                        Full-stack ASP.NET MVC development focusing on C#,
+                        HTML5, CSS3, jQuery, Bootstrap
+                      </li>
+                      <li>
+                        Develop content management system as a SPA for client
+                      </li>
+                      <li>Write back-end APIs for data interaction</li>
+                      <li>Design database schemas</li>
+                      <li>Design and implement UI components</li>
                     </ul>
                   </div>
                 </section>
                 <section>
-                  <h3 className="page__section__date">MAY 2015 - AUG 2015</h3>
+                  <h3 className="page__section__date">MAY 2014 - AUG 2014</h3>
                   <h2>Designer/Web Developer Intern</h2>
                   <div className="page__section__info">
                     <h3>
                       <span className="company">PodTrackers LLC.</span>, Sydney,
                       Australia
                     </h3>
-                    <p>
-                      - fweiofjw eoifjweofi <br />- jwefoiwejfo weifjwoei
-                      fjwoeif jwofeijwe ofjwef
-                      <br />- jwefoiwejfo weifjwoei fjwoeif jwofeijwe ofjwef
-                      <br />- jwefoiwejfo weifjwoei fjwoeif jwofeijwe ofjwef
-                    </p>
+                    <ul>
+                      <li>
+                        Design and develop tutorial for webapp (Bootstrap,
+                        jQuery)
+                      </li>
+                      <li>Conduct secondary research and usability testing</li>
+                      <li>Design marketing material</li>
+                    </ul>
                   </div>
                 </section>
               </section>
@@ -129,16 +140,13 @@ const Resume = () => {
               </section>
 
               <section className="page__section">
-                <h1>Strength</h1>
+                <h1>Skills &amp; Strengths</h1>
                 <section>
-                  <h3>Web development</h3>
+                  <h3>Development Skills</h3>
                   <ul>
+                    <li>Proficient with version contorl system such as Git</li>
                     <li>
-                      Proficient at using version contorl system such as Git
-                    </li>
-                    <li>
-                      Proficient at using workflow tools - webpack, gulp, npm,
-                      grunt
+                      Proficient with workflow tools - webpack, gulp, npm, grunt
                     </li>
                     <li>
                       Proficient at adopting TDD/BDD principles; adept in
@@ -150,13 +158,22 @@ const Resume = () => {
                     </li>
                     <li>Adept in back-end frameworks - Express, ASP.NET MVC</li>
                     <li>
-                      Experienced in designing database schemas - MongoDB, MySQL
+                      Experience in designing database schemas - MongoDB, MySQL
                     </li>
-                    <li>Experienced in agile development and scrum method</li>
+                    <li>Experience in agile development and scrum method</li>
                     <li>
-                      Experienced in doing code review and pair programming
+                      Experience in doing code review and pair programming
                     </li>
+                    <li>Familiar with A/B testing</li>
                     <li>Keen understanding of UI/UX design</li>
+                  </ul>
+                </section>
+                <section>
+                  <h3>Design Skills</h3>
+                  <ul>
+                    <li>Proficient with Adobe Creative Suite - XD, AI, PS</li>
+                    <li>Proficient at wireframing and prototyping</li>
+                    <li>Experience in conducting UX researches</li>
                   </ul>
                 </section>
               </section>

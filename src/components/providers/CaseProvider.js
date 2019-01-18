@@ -34,7 +34,7 @@ class CaseProvider extends React.Component {
       header: "Dashboard App",
       imgUrl: chartjpg,
       tabInfo: {
-        name: "Chart App",
+        name: "Dashboard App",
         to: "/portfolio/chart-app",
         icon: "",
         closable: true

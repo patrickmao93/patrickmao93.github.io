@@ -56,6 +56,7 @@
     flex: 1;
     height: 100%;
     .page {
+      margin-bottom: 50px;
       @extend %page;
       h2,
       h3 {

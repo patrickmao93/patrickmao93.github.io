@@ -20,10 +20,6 @@
   }
 }
 
-.resume__scroll .page__work {
-  margin-bottom: 40px;
-}
-
 html,
 body,
 div,
@@ -440,6 +436,12 @@ em {
   width: 20px;
   height: 20px;
   overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  color: white;
 }
 .header__title {
   display: inline-block;
@@ -730,8 +732,21 @@ em {
   display: inline-block;
   padding: 10px;
 }
-.resume__scroll .page__work > section {
+.resume__scroll .page__section {
+  margin-bottom: 40px;
+}
+.resume__scroll .page__section > section {
   margin-bottom: 30px;
+}
+.resume__scroll .page__section ul {
+  margin-left: 30px;
+}
+.resume__scroll .page__section ul li {
+  list-style-type: disc;
+  margin-bottom: 6px;
+}
+.resume__scroll .page__section__date {
+  font-family: "Arial Narrow", Helvetica, sans-serif;
 }
 
 .portfolio {
@@ -993,8 +1008,21 @@ em {
   display: inline-block;
   padding: 10px;
 }
-.resume__scroll .page__work > section {
+.resume__scroll .page__section {
+  margin-bottom: 40px;
+}
+.resume__scroll .page__section > section {
   margin-bottom: 30px;
+}
+.resume__scroll .page__section ul {
+  margin-left: 30px;
+}
+.resume__scroll .page__section ul li {
+  list-style-type: disc;
+  margin-bottom: 6px;
+}
+.resume__scroll .page__section__date {
+  font-family: "Arial Narrow", Helvetica, sans-serif;
 }
 
 /*# sourceMappingURL=index.css.map */

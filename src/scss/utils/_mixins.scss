@@ -19,6 +19,10 @@
     @media (min-width: $breakpoint-xl) {
       @content;
     }
+  } @else if $size == "xxl" {
+    @media (min-width: $breakpoint-xxl) {
+      @content;
+    }
   } @else {
     @error "'#{$size}' is not valid $size argument";
   }

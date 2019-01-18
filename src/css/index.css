@@ -1,20 +1,25 @@
 .case, .resume__scroll .page {
   position: relative;
-  top: 40px;
   min-height: 80%;
   width: 100%;
-  margin: auto;
   padding: 30px;
   max-width: 1000px;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.05);
 }
 @media (min-width: 768px) {
   .case, .resume__scroll .page {
-    padding: 40px;
-    width: 90%;
+    padding: 50px 8%;
+    width: 100%;
   }
 }
 @media (min-width: 1024px) {
+  .case, .resume__scroll .page {
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 1440px) {
   .case, .resume__scroll .page {
     padding: 70px;
   }
@@ -220,14 +225,6 @@ strong {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #e2e2e2;
-}
-
-.fa-react {
-  color: #72ddfa;
-}
-
-.fa-js {
-  color: #f5dc4e;
 }
 
 .card {
@@ -654,18 +651,33 @@ strong {
 
 .resume {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   flex-wrap: nowrap;
   align-items: center;
-  height: calc(100vh - 107px);
+}
+@media (min-width: 1024px) {
+  .resume {
+    flex-direction: row;
+    height: calc(100vh - 107px);
+  }
 }
 .resume__header {
   color: white;
-  padding: 50px;
   background: #155e91;
   height: 100%;
-  width: 400px;
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  .resume__header {
+    padding: 50px 8%;
+  }
+}
+@media (min-width: 1024px) {
+  .resume__header {
+    width: 400px;
+    padding: 60px 40px;
+  }
 }
 .resume__header h1 {
   font-size: 1.6rem;
@@ -717,13 +729,16 @@ strong {
   color: #33a9dc;
 }
 .resume__scroll {
-  overflow: auto;
+  overflow: hidden;
+  width: 100%;
   height: calc(100vh - 107px);
   flex: 1;
   height: 100%;
 }
-.resume__scroll .page {
-  margin-bottom: 50px;
+@media (min-width: 1024px) {
+  .resume__scroll {
+    overflow-y: auto;
+  }
 }
 .resume__scroll .page h2,
 .resume__scroll .page h3 {
@@ -745,11 +760,21 @@ strong {
   font-weight: bold;
 }
 .resume__scroll .page__download {
-  display: inline-block;
+  display: none;
   position: absolute;
   top: 20px;
-  right: -20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1024px) {
+  .resume__scroll .page__download {
+    display: inline-block;
+    right: 0px;
+  }
+}
+@media (min-width: 1520px) {
+  .resume__scroll .page__download {
+    right: -20px;
+  }
 }
 .resume__scroll .page__download a {
   color: white;
@@ -947,18 +972,33 @@ strong {
 
 .resume {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
   flex-wrap: nowrap;
   align-items: center;
-  height: calc(100vh - 107px);
+}
+@media (min-width: 1024px) {
+  .resume {
+    flex-direction: row;
+    height: calc(100vh - 107px);
+  }
 }
 .resume__header {
   color: white;
-  padding: 50px;
   background: #155e91;
   height: 100%;
-  width: 400px;
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  .resume__header {
+    padding: 50px 8%;
+  }
+}
+@media (min-width: 1024px) {
+  .resume__header {
+    width: 400px;
+    padding: 60px 40px;
+  }
 }
 .resume__header h1 {
   font-size: 1.6rem;
@@ -1010,13 +1050,16 @@ strong {
   color: #33a9dc;
 }
 .resume__scroll {
-  overflow: auto;
+  overflow: hidden;
+  width: 100%;
   height: calc(100vh - 107px);
   flex: 1;
   height: 100%;
 }
-.resume__scroll .page {
-  margin-bottom: 50px;
+@media (min-width: 1024px) {
+  .resume__scroll {
+    overflow-y: auto;
+  }
 }
 .resume__scroll .page h2,
 .resume__scroll .page h3 {
@@ -1038,11 +1081,21 @@ strong {
   font-weight: bold;
 }
 .resume__scroll .page__download {
-  display: inline-block;
+  display: none;
   position: absolute;
   top: 20px;
-  right: -20px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+@media (min-width: 1024px) {
+  .resume__scroll .page__download {
+    display: inline-block;
+    right: 0px;
+  }
+}
+@media (min-width: 1520px) {
+  .resume__scroll .page__download {
+    right: -20px;
+  }
 }
 .resume__scroll .page__download a {
   color: white;

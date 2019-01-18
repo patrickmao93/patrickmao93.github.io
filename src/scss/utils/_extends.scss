@@ -1,17 +1,20 @@
 %page {
   position: relative;
-  top: 40px;
   min-height: 80%;
   width: 100%;
-  margin: auto;
   padding: 30px;
   max-width: 1000px;
   box-shadow: 0 0 50px rgba($color: #000000, $alpha: 0.05);
   @include media("md") {
-    padding: 40px;
-    width: 90%;
+    padding: 50px 8%;
+    width: 100%;
   }
   @include media("lg") {
+    padding: 50px;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+  @include media("xl") {
     padding: 70px;
   }
 }

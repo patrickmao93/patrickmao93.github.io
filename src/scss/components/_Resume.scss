@@ -1,13 +1,22 @@
 .resume {
-  @include flex();
-  height: calc(100vh - 107px);
+  @include flex($dir: column);
+  @include media("lg") {
+    flex-direction: row;
+    height: calc(100vh - 107px);
+  }
 
   &__header {
     color: $color-font-inverse;
-    padding: 50px;
     background: #155e91;
     height: 100%;
-    width: 400px;
+    padding: 30px 20px;
+    @include media("md") {
+      padding: 50px 8%;
+    }
+    @include media("lg") {
+      width: 400px;
+      padding: 60px 40px;
+    }
 
     h1 {
       font-size: 1.6rem;
@@ -63,12 +72,17 @@
   }
 
   &__scroll {
-    overflow: auto;
+    overflow: hidden;
+    width: 100%;
+
+    @include media("lg") {
+      overflow-y: auto;
+    }
     height: calc(100vh - 107px);
     flex: 1;
     height: 100%;
+
     .page {
-      margin-bottom: 50px;
       @extend %page;
       h2,
       h3 {
@@ -91,10 +105,17 @@
       }
 
       &__download {
-        display: inline-block;
+        display: none;
+        @include media("lg") {
+          display: inline-block;
+          right: 0px;
+        }
+        @include media("xxl") {
+          right: -20px;
+        }
         position: absolute;
         top: 20px;
-        right: -20px;
+
         box-shadow: 0 5px 20px rgba($color: #000000, $alpha: 0.1);
         a {
           color: $color-font-inverse;

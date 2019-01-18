@@ -3,6 +3,15 @@ import { Spring } from "react-spring";
 
 import resumeDoc from "../QizhengMao_Intermediate_Resume.docx";
 
+const springConfig = () => {
+  if (window.innerWidth > 1024) {
+    return {
+      from: { opacity: 0, top: "80px" },
+      to: { opacity: 1, top: "40px" }
+    };
+  }
+};
+
 const Resume = () => {
   return (
     <div className="resume">

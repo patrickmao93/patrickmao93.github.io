@@ -1,19 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "75e2c33866b400a893672ce14934e465",
-    "url": "/static/media/proj6_1440x800_1.75e2c338.jpg"
+    "revision": "41a1d493366744ee77c734eef941f82d",
+    "url": "/static/media/proj6_1440x800.41a1d493.jpg"
   },
   {
-    "revision": "96a9f1f2ca316c8d6b14",
-    "url": "/static/css/main.e26ce975.chunk.css"
+    "revision": "fba306588e065eece6c3",
+    "url": "/static/css/main.fac21ea9.chunk.css"
   },
   {
-    "revision": "a8485d297e222655b8a1",
-    "url": "/static/js/1.a8485d29.chunk.js"
+    "revision": "036b02758d69c1070288",
+    "url": "/static/js/1.036b0275.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
     "url": "/static/js/runtime~main.229c360f.js"
+  },
+  {
+    "revision": "fd65fe0a69e2f6c67f9d8d16ba69e266",
+    "url": "/static/media/QizhengMao_Intermediate_Resume.fd65fe0a.docx"
   },
   {
     "revision": "0c092f441678cccaf07f1f11c065fd47",
@@ -60,12 +64,12 @@ self.__precacheManifest = [
     "url": "/static/media/proj7_425x800.8c2d00ab.jpg"
   },
   {
-    "revision": "41a1d493366744ee77c734eef941f82d",
-    "url": "/static/media/proj6_1440x800.41a1d493.jpg"
+    "revision": "fba306588e065eece6c3",
+    "url": "/static/js/main.fba30658.chunk.js"
   },
   {
-    "revision": "96a9f1f2ca316c8d6b14",
-    "url": "/static/js/main.96a9f1f2.chunk.js"
+    "revision": "75e2c33866b400a893672ce14934e465",
+    "url": "/static/media/proj6_1440x800_1.75e2c338.jpg"
   },
   {
     "revision": "07d5540c0831c0b058be369f8a9b9bf3",
@@ -124,7 +128,7 @@ self.__precacheManifest = [
     "url": "/static/media/segoeui.3922dbc6.ttf"
   },
   {
-    "revision": "17526f674e1d875613616385473dc253",
+    "revision": "42626e09d7590dde9782146f319a8451",
     "url": "/index.html"
   }
 ];

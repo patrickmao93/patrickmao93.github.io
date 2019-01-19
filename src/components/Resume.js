@@ -3,15 +3,6 @@ import { Spring } from "react-spring";
 
 import resumeDoc from "../QizhengMao_Intermediate_Resume.docx";
 
-const springConfig = () => {
-  if (window.innerWidth > 1024) {
-    return {
-      from: { opacity: 0, top: "80px" },
-      to: { opacity: 1, top: "40px" }
-    };
-  }
-};
-
 const Resume = () => {
   return (
     <div className="resume">
@@ -169,8 +160,8 @@ const Resume = () => {
                       <strong>webpack, gulp, npm, grunt</strong>
                     </li>
                     <li>
-                      Proficient at adopting TDD/BDD principles; adept in
-                      testing tools such as <strong>Mocha</strong>
+                      Adept working with databases -{" "}
+                      <strong>MongoDB(Mongoose), MySQL</strong>
                     </li>
                     <li>
                       Adept in front-end frameworks/libraries -{" "}
@@ -181,8 +172,8 @@ const Resume = () => {
                       <strong>Express, ASP.NET MVC</strong>
                     </li>
                     <li>
-                      Experience in designing database schemas -{" "}
-                      <strong>MongoDB, MySQL</strong>
+                      Adept at adopting TDD/BDD principles; adept in testing
+                      tools - <strong>Mocha, Jest, Chai</strong>
                     </li>
                     <li>
                       Experience in <strong>agile</strong> development and{" "}

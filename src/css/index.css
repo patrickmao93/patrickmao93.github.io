@@ -917,6 +917,11 @@ strong {
   border-right: 1px solid #efefef;
 }
 @media (min-width: 768px) {
+  .case__header__info__links a:first-child {
+    border: none;
+  }
+}
+@media (min-width: 768px) {
   .case__header__info {
     flex-direction: row;
     align-items: center;

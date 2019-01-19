@@ -20,6 +20,9 @@
         }
         a:first-child {
           border-right: 1px solid $color-border-primary;
+          @include media("md") {
+            border: none;
+          }
         }
       }
       @include media("md") {

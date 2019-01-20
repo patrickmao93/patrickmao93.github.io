@@ -676,11 +676,7 @@ i.colored.fa-css3-alt {
   }
 }
 .intro__content__img {
-  overflow: hidden;
-  width: auto;
-  min-width: auto;
-  height: auto;
-  border-radius: 50%;
+  border-radius: 40px;
   background: #007acc;
   width: 200px;
   height: 200px;
@@ -702,7 +698,7 @@ i.colored.fa-css3-alt {
 }
 .intro__content__desc h1 {
   color: #202124;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
 .intro__content__desc a {

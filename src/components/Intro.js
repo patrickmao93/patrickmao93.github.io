@@ -11,7 +11,7 @@ class Intro extends React.Component {
         <Spring
           from={{ opacity: 0, bottom: -50 }}
           to={{ opacity: 1, bottom: 0 }}
-          config={{ delay: 1000 }}
+          config={{ delay: 800 }}
         >
           {this.renderContent()}
         </Spring>
@@ -21,7 +21,7 @@ class Intro extends React.Component {
         <Spring
           from={{ opacity: 0, left: 50 }}
           to={{ opacity: 1, left: 0 }}
-          config={{ delay: 1000 }}
+          config={{ delay: 800 }}
         >
           {this.renderContent()}
         </Spring>
@@ -35,7 +35,7 @@ class Intro extends React.Component {
         <Spring
           from={{ opacity: 0 }}
           to={{ opacity: 1 }}
-          config={{ delay: 500 }}
+          config={{ delay: 1000 }}
         >
           {props => <div className="intro__content__img" />}
         </Spring>

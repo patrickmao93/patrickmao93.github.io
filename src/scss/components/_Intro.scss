@@ -20,7 +20,7 @@
       flex-direction: row;
     }
     &__img {
-      @include roundy();
+      border-radius: 40px;
       @include img(200px, 200px);
     }
     &__desc {
@@ -37,7 +37,7 @@
       }
       h1 {
         color: $color-font-highlight;
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-bottom: 20px;
       }
 

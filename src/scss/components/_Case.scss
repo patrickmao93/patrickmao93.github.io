@@ -58,14 +58,14 @@
     }
     &__cards {
       @include flex($dir: column);
-      @include media("lg") {
+      @include media("md") {
         flex-direction: row;
         flex-wrap: wrap;
       }
       .card {
         width: 96%;
         margin-bottom: 30px;
-        @include media("lg") {
+        @include media("md") {
           width: auto;
           margin-right: 50px;
           margin-bottom: 50px;

@@ -23,10 +23,21 @@ class Code extends React.Component {
   }
 
   generateLines(amount) {
-    const colors = ["blue", "purple", "green", "yellow", "white", "red"];
+    const colors = [
+      "blue",
+      "purple",
+      "green",
+      "yellow",
+      "white",
+      "red",
+      "white",
+      "white",
+      "white",
+      "white"
+    ];
     const lines = [];
     for (let i = 0; i < amount; i++) {
-      const color = colors[Math.floor(Math.random() * 6)];
+      const color = colors[Math.floor(Math.random() * 10)];
       const length = Math.ceil(Math.random() * 5);
       lines.push(<Line key={i} color={color} length={length} />);
     }

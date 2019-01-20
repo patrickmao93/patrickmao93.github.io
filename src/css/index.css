@@ -665,8 +665,14 @@ strong {
 .resume__header {
   color: white;
   background: #155e91;
+  width: 100%;
   height: 100%;
   padding: 30px 20px;
+}
+@media (min-width: 425px) {
+  .resume__header {
+    padding: 40px 30px;
+  }
 }
 @media (min-width: 768px) {
   .resume__header {
@@ -675,8 +681,13 @@ strong {
 }
 @media (min-width: 1024px) {
   .resume__header {
-    width: 400px;
+    width: 350px;
     padding: 60px 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .resume__header {
+    width: 400px;
   }
 }
 .resume__header h1 {
@@ -698,6 +709,16 @@ strong {
 }
 .resume__header__section {
   font-size: 14px;
+}
+@media (min-width: 768px) {
+  .resume__header__section {
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .resume__header__section {
+    width: auto;
+  }
 }
 .resume__header__section__info {
   font-family: "Arial Narrow", Helvetica, sans-serif;
@@ -793,6 +814,7 @@ strong {
   margin-left: 30px;
 }
 .resume__scroll .page__section ul li {
+  line-height: 1.4;
   list-style-type: disc;
   margin-bottom: 6px;
 }
@@ -957,7 +979,7 @@ strong {
   flex-wrap: nowrap;
   align-items: center;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .case__content__cards {
     flex-direction: row;
     flex-wrap: wrap;
@@ -967,7 +989,7 @@ strong {
   width: 96%;
   margin-bottom: 30px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .case__content__cards .card {
     width: auto;
     margin-right: 50px;
@@ -991,8 +1013,14 @@ strong {
 .resume__header {
   color: white;
   background: #155e91;
+  width: 100%;
   height: 100%;
   padding: 30px 20px;
+}
+@media (min-width: 425px) {
+  .resume__header {
+    padding: 40px 30px;
+  }
 }
 @media (min-width: 768px) {
   .resume__header {
@@ -1001,8 +1029,13 @@ strong {
 }
 @media (min-width: 1024px) {
   .resume__header {
-    width: 400px;
+    width: 350px;
     padding: 60px 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .resume__header {
+    width: 400px;
   }
 }
 .resume__header h1 {
@@ -1024,6 +1057,16 @@ strong {
 }
 .resume__header__section {
   font-size: 14px;
+}
+@media (min-width: 768px) {
+  .resume__header__section {
+    width: 400px;
+  }
+}
+@media (min-width: 1024px) {
+  .resume__header__section {
+    width: auto;
+  }
 }
 .resume__header__section__info {
   font-family: "Arial Narrow", Helvetica, sans-serif;
@@ -1119,6 +1162,7 @@ strong {
   margin-left: 30px;
 }
 .resume__scroll .page__section ul li {
+  line-height: 1.4;
   list-style-type: disc;
   margin-bottom: 6px;
 }

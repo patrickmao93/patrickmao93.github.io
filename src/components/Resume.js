@@ -11,10 +11,6 @@ const Resume = () => {
         <h3>Full-Stack Web Developer</h3>
         <section className="resume__header__section">
           <span className="resume__header__section__info">
-            <i className="fas fa-home" />
-            600 Yushan Rd., #8 room 402, Shanghai
-          </span>
-          <span className="resume__header__section__info">
             <i className="fas fa-envelope" />
             Patrickmao@live.com
           </span>
@@ -160,7 +156,7 @@ const Resume = () => {
                       <strong>webpack, gulp, npm, grunt</strong>
                     </li>
                     <li>
-                      Adept working with databases -{" "}
+                      Adept at working with databases -{" "}
                       <strong>MongoDB(Mongoose), MySQL</strong>
                     </li>
                     <li>

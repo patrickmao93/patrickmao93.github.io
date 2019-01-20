@@ -1,32 +1,44 @@
 .intro {
   font-family: $font-family-secondary;
+  overflow: hidden;
+  position: relative;
   @include flex($just: center);
   height: 100%;
-  perspective: 1000px;
   &__content {
-    padding: 50px 100px 50px 80px;
-    background: rgba($color: $color-background-card, $alpha: 0.9);
-    @include flex($just: center);
-    position: relative;
-    margin-right: 20%;
+    position: absolute;
     z-index: 1000;
-    border-left: 4px solid $color-primary;
-    box-shadow: 0 70px 63px -60px rgba($color: #000000, $alpha: 0.5);
-    // transform-style: preserve-3d;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    bottom: 0px;
+    background: rgba($color: $color-background-card, $alpha: 0.8);
+    box-shadow: 0 20px 40px -20px rgba($color: #000000, $alpha: 0.2);
+    padding: 80px 30px;
+    @include flex($dir: column, $just: center);
+
+    @include media("lg") {
+      flex-direction: row;
+    }
     &__img {
       @include roundy();
       @include img(200px, 200px);
-      // box-shadow: 5px 5px 5px rgba($color: #000000, $alpha: 0.2);
-      // transform: translateZ(20px);
     }
     &__desc {
-      margin-left: 30px;
+      margin-top: 20px;
+      @include media("lg") {
+        margin-top: 0;
+        margin-left: 30px;
+        margin-right: 20%;
+      }
 
+      &__icons {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+      }
       h1 {
         color: $color-font-highlight;
         font-size: 2rem;
-        // text-shadow: 5px 5px 2px rgba($color: #000000, $alpha: 0.2);
-        // transform: translateZ(10px);
+        margin-bottom: 20px;
       }
 
       a {

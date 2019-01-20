@@ -227,6 +227,22 @@ strong {
   background: #e2e2e2;
 }
 
+i.colored {
+  margin-right: 18px;
+}
+i.colored.fa-react {
+  color: #72ddfa;
+}
+i.colored.fa-js-square {
+  color: #f5dc4e;
+}
+i.colored.fa-html5 {
+  color: #ef652a;
+}
+i.colored.fa-css3-alt {
+  color: #33a9dc;
+}
+
 .card {
   font-family: "Segoe UI", sans-serif;
   color: #5a5a5a;
@@ -327,19 +343,44 @@ strong {
   }
 }
 .code .w-1 {
-  width: 50px;
+  width: 32px;
+}
+@media (min-width: 1024px) {
+  .code .w-1 {
+    width: 50px;
+  }
 }
 .code .w-2 {
-  width: 90px;
+  width: 54px;
+}
+@media (min-width: 1024px) {
+  .code .w-2 {
+    width: 90px;
+  }
 }
 .code .w-3 {
-  width: 130px;
+  width: 76px;
+}
+@media (min-width: 1024px) {
+  .code .w-3 {
+    width: 130px;
+  }
 }
 .code .w-4 {
-  width: 170px;
+  width: 98px;
+}
+@media (min-width: 1024px) {
+  .code .w-4 {
+    width: 170px;
+  }
 }
 .code .w-5 {
-  width: 210px;
+  width: 120px;
+}
+@media (min-width: 1024px) {
+  .code .w-5 {
+    width: 210px;
+  }
 }
 .code .blue {
   background: #61afef;
@@ -604,27 +645,35 @@ strong {
 
 .intro {
   font-family: "Consola", sans-serif;
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
   height: 100%;
-  perspective: 1000px;
 }
 .intro__content {
-  padding: 50px 100px 50px 80px;
-  background: rgba(255, 255, 255, 0.9);
+  position: absolute;
+  z-index: 1000;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 40px -20px rgba(0, 0, 0, 0.2);
+  padding: 80px 30px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
-  position: relative;
-  margin-right: 20%;
-  z-index: 1000;
-  border-left: 4px solid #007acc;
-  box-shadow: 0 70px 63px -60px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 1024px) {
+  .intro__content {
+    flex-direction: row;
+  }
 }
 .intro__content__img {
   overflow: hidden;
@@ -638,11 +687,23 @@ strong {
   overflow: hidden;
 }
 .intro__content__desc {
-  margin-left: 30px;
+  margin-top: 20px;
+}
+@media (min-width: 1024px) {
+  .intro__content__desc {
+    margin-top: 0;
+    margin-left: 30px;
+    margin-right: 20%;
+  }
+}
+.intro__content__desc__icons {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
 }
 .intro__content__desc h1 {
   color: #202124;
   font-size: 2rem;
+  margin-bottom: 20px;
 }
 .intro__content__desc a {
   display: block;
@@ -725,7 +786,7 @@ strong {
   display: block;
   margin-bottom: 6px;
 }
-.resume__header__section__info .fas {
+.resume__header__section__info i {
   display: inline-block;
   width: 20px;
   text-align: center;
@@ -1073,7 +1134,7 @@ strong {
   display: block;
   margin-bottom: 6px;
 }
-.resume__header__section__info .fas {
+.resume__header__section__info i {
   display: inline-block;
   width: 20px;
   text-align: center;

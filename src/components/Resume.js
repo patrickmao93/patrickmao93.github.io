@@ -12,7 +12,11 @@ const Resume = () => {
         <section className="resume__header__section">
           <span className="resume__header__section__info">
             <i className="fas fa-envelope" />
-            Patrickmao@live.com
+            patrickmao@live.com
+          </span>
+          <span className="resume__header__section__info">
+            <i className="fab fa-weixin" />
+            patrickm002
           </span>
           <span className="resume__header__section__info">
             <i className="fas fa-phone" />
@@ -21,9 +25,9 @@ const Resume = () => {
         </section>
         <section className="resume__header__section">
           <p>
-            Innovative, creative team player. 2 years of experience in web
-            development and looking for more. Seek to secure a position of web
-            development role.
+            Self-driven web developer, user interface fanatic. 2 years of
+            experience in web development and looking for more. Seek to secure a
+            position of font-end or full-stack development role.
           </p>
         </section>
         <section className="resume__header__section">

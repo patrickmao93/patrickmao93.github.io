@@ -17,7 +17,7 @@ $red: #e06c62;
     display: inline-block;
     height: 22px;
     border-radius: 11px;
-    margin: 11px;
+    margin: 8px;
     @include media("lg") {
       height: 32px;
       border-radius: 16px;
@@ -30,7 +30,7 @@ $red: #e06c62;
 
   @for $var from 1 through 5 {
     .w-#{$var} {
-      width: #{$var * 22px + 10px};
+      width: #{$var * 22px + 18px};
       @include media("lg") {
         width: #{$var * 40px + 10px};
       }

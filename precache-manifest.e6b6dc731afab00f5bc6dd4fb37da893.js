@@ -1,15 +1,15 @@
 self.__precacheManifest = [
   {
-    "revision": "41a1d493366744ee77c734eef941f82d",
-    "url": "/static/media/proj6_1440x800.41a1d493.jpg"
+    "revision": "9af084e329327be458363f6bc15539ae",
+    "url": "/static/media/proj5_768x800.9af084e3.jpg"
   },
   {
-    "revision": "2b21a0032b6e7c66fb7f",
-    "url": "/static/css/main.00d8e6fb.chunk.css"
+    "revision": "0105b00052c80efdeafe",
+    "url": "/static/css/main.1ef2c9a6.chunk.css"
   },
   {
-    "revision": "5435ab7f4bea73f4e37f",
-    "url": "/static/js/1.5435ab7f.chunk.js"
+    "revision": "dbe80c5a1afe1c1092f6",
+    "url": "/static/js/1.dbe80c5a.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -64,8 +64,8 @@ self.__precacheManifest = [
     "url": "/static/media/proj7_425x800.8c2d00ab.jpg"
   },
   {
-    "revision": "2b21a0032b6e7c66fb7f",
-    "url": "/static/js/main.2b21a003.chunk.js"
+    "revision": "41a1d493366744ee77c734eef941f82d",
+    "url": "/static/media/proj6_1440x800.41a1d493.jpg"
   },
   {
     "revision": "75e2c33866b400a893672ce14934e465",
@@ -76,8 +76,8 @@ self.__precacheManifest = [
     "url": "/static/media/proj5_1440x800.07d5540c.jpg"
   },
   {
-    "revision": "9af084e329327be458363f6bc15539ae",
-    "url": "/static/media/proj5_768x800.9af084e3.jpg"
+    "revision": "0105b00052c80efdeafe",
+    "url": "/static/js/main.0105b000.chunk.js"
   },
   {
     "revision": "0d5afcf91a96f0364e8dcb0a25312682",
@@ -88,16 +88,16 @@ self.__precacheManifest = [
     "url": "/static/media/proj5_1440x800_1.2b77ae14.jpg"
   },
   {
-    "revision": "05d1114bb05a9c2f7a33c9e94bf6024c",
-    "url": "/static/media/zhihu.05d1114b.svg"
+    "revision": "ceb4f079819239e35b79854feb03187b",
+    "url": "/static/media/portfolio_425x800.ceb4f079.jpg"
   },
   {
-    "revision": "ff5b0a65421863e90be60b9c523f28ec",
-    "url": "/static/media/codewars.ff5b0a65.svg"
+    "revision": "3b8d50019ad88215e85304a4623dbc27",
+    "url": "/static/media/portfolio_768x800.3b8d5001.jpg"
   },
   {
-    "revision": "9033954feeaba6a1f401345c157704e6",
-    "url": "/static/media/wechat.9033954f.jpg"
+    "revision": "20eb5ee6b7160047e2c8c3806295be81",
+    "url": "/static/media/portfolio_1440x800.20eb5ee6.jpg"
   },
   {
     "revision": "523bf8ee455cbd259fa1c84c4e89e74b",
@@ -120,6 +120,30 @@ self.__precacheManifest = [
     "url": "/static/media/cco_576x320.cd6b20f2.jpg"
   },
   {
+    "revision": "4aebaa5b5fcbc4d6d1fdcb8a285e8e89",
+    "url": "/static/media/portfolio_576x320.4aebaa5b.jpg"
+  },
+  {
+    "revision": "05d1114bb05a9c2f7a33c9e94bf6024c",
+    "url": "/static/media/zhihu.05d1114b.svg"
+  },
+  {
+    "revision": "ff5b0a65421863e90be60b9c523f28ec",
+    "url": "/static/media/codewars.ff5b0a65.svg"
+  },
+  {
+    "revision": "9033954feeaba6a1f401345c157704e6",
+    "url": "/static/media/wechat.9033954f.jpg"
+  },
+  {
+    "revision": "f4bef21e0238dc7fe0d1e8dd4473a965",
+    "url": "/static/media/gallery-banner.f4bef21e.jpg"
+  },
+  {
+    "revision": "f9c6b7e4880e51ab5ffc0f40ea30881f",
+    "url": "/static/media/purdue-banner.f9c6b7e4.jpg"
+  },
+  {
     "revision": "fb505e28b6d130f08fe8f070e0d6b1b8",
     "url": "/static/media/CONSOLA.fb505e28.TTF"
   },
@@ -128,7 +152,7 @@ self.__precacheManifest = [
     "url": "/static/media/segoeui.3922dbc6.ttf"
   },
   {
-    "revision": "72effb64b367fbfcb537691abe8739a6",
+    "revision": "f66bc6b762d5fc25a4e76583017ea7a4",
     "url": "/index.html"
   }
 ];

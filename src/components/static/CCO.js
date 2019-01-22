@@ -2,6 +2,7 @@ import React from "react";
 
 import Pill from "./../widgets/Pill";
 import Card from "../widgets/Card";
+import Anchor from "./../widgets/Anchor";
 
 import lg from "../../media/images/cco_1440x800.jpg";
 import md from "../../media/images/cco_768x800.jpg";
@@ -11,21 +12,22 @@ const CCO = () => {
   return (
     <div>
       <div className="case__header">
-        <h1>Purdue University Center for Career Opportunities Website V4</h1>
+        <div className="case__header__background case__header__background--purdue" />
+        <h1>Purdue University CCO Website V4</h1>
         <div className="case__header__info">
           <div className="case__header__info__pills">
             <Pill type="js" />
             <Pill type="jquery" />
             <Pill type="bootstrap" />
-            <Pill type="backbone" />
+            <Pill type="knockout" />
             <Pill type="asp" />
             <Pill type="mysql" />
           </div>
           <div className="case__header__info__links">
-            <a href="https://www.cco.purdue.edu/">
+            <Anchor href="https://www.cco.purdue.edu/">
               <i className="far fa-window-maximize" />
-              Go to live page
-            </a>
+              Live website
+            </Anchor>
           </div>
         </div>
       </div>

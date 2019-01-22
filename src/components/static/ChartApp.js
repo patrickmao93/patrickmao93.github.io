@@ -2,6 +2,7 @@ import React from "react";
 
 import Pill from "./../widgets/Pill";
 import Card from "./../widgets/Card";
+import Anchor from "./../widgets/Anchor";
 
 import lg from "../../media/images/proj7_1440x800.jpg";
 import md from "../../media/images/proj7_768x800.jpg";
@@ -11,22 +12,22 @@ const ChartApp = () => {
   return (
     <div>
       <div className="case__header">
+        <div className="case__header__background case__header__background--chart" />
         <h1>Dashboard App</h1>
-
         <div className="case__header__info">
           <div className="case__header__info__pills">
             <Pill type="js" />
             <Pill type="chartjs" />
           </div>
           <div className="case__header__info__links">
-            <a href="https://github.com/patrickmao93/techdegree-project-7">
+            <Anchor href="https://github.com/patrickmao93/techdegree-project-7">
               <i className="fab fa-github" />
               View on Github
-            </a>
-            <a href="https://patrickmao93.github.io/techdegree-project-7">
+            </Anchor>
+            <Anchor href="https://patrickmao93.github.io/techdegree-project-7">
               <i className="far fa-window-maximize" />
               Go to live page
-            </a>
+            </Anchor>
           </div>
         </div>
       </div>
@@ -35,9 +36,9 @@ const ChartApp = () => {
           <h2>Summary</h2>
           <p className="case__content__paragraph">
             This was the project #7 of the{" "}
-            <a href="https://teamtreehouse.com/techdegree/front-end-web-development">
+            <Anchor href="https://teamtreehouse.com/techdegree/front-end-web-development">
               Treehouse Front End Web Development Techdegree
-            </a>
+            </Anchor>
             . <br />
             CSS Grid is just awesomeness. What even better is when combining CSS
             Grid with flexbox. These two tools really makes laying out web apps

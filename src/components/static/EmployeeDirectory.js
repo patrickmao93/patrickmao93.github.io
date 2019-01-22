@@ -2,6 +2,7 @@ import React from "react";
 
 import Pill from "./../widgets/Pill";
 import Card from "../widgets/Card";
+import Anchor from "../widgets/Anchor";
 
 import lg from "../../media/images/proj8_1440x800.jpg";
 import md from "../../media/images/proj8_1024x800.jpg";
@@ -13,6 +14,7 @@ const EmployeeDirectory = () => {
   return (
     <div>
       <div className="case__header">
+        <div className="case__header__background case__header__background--ed" />
         <h1>Employee Directory App</h1>
         <div className="case__header__info">
           <div className="case__header__info__pills">
@@ -22,14 +24,14 @@ const EmployeeDirectory = () => {
             <Pill type="sass" />
           </div>
           <div className="case__header__info__links">
-            <a href="https://github.com/patrickmao93/techdegree-project-8">
+            <Anchor href="https://github.com/patrickmao93/techdegree-project-8">
               <i className="fab fa-github" />
               View on Github
-            </a>
-            <a href="https://patrickmao93.github.io/EmployeeDirectory-React">
+            </Anchor>
+            <Anchor href="https://patrickmao93.github.io/EmployeeDirectory-React">
               <i className="far fa-window-maximize" />
               Go to live page
-            </a>
+            </Anchor>
           </div>
         </div>
       </div>
@@ -38,9 +40,9 @@ const EmployeeDirectory = () => {
           <h2>Summary</h2>
           <p className="case__content__paragraph">
             This was the project #8 of the{" "}
-            <a href="https://teamtreehouse.com/techdegree/front-end-web-development">
+            <Anchor href="https://teamtreehouse.com/techdegree/front-end-web-development">
               Treehouse Front End Web Development Techdegree
-            </a>
+            </Anchor>
             . <br />
             The purpose of this project is to help myself practicing the concept
             of utilizing the <em>fetch</em> API to pull data from an online API
@@ -52,15 +54,15 @@ const EmployeeDirectory = () => {
             global variables that could end up being hazardous in the future if
             the project scale grows. <br />
             After finishing this project, I re-wrote it completely with React.{" "}
-            <a href="https://github.com/patrickmao93/EmployeeDirectory-React">
+            <Anchor href="https://github.com/patrickmao93/EmployeeDirectory-React">
               Check it out
-            </a>
+            </Anchor>
             . <br />
             After doing a react version of this project, I took one step further
             and implemented this project again using react and redux.{" "}
-            <a href="https://github.com/patrickmao93/Employee-directory-with-redux">
+            <Anchor href="https://github.com/patrickmao93/Employee-directory-with-redux">
               Check it out
-            </a>
+            </Anchor>
           </p>
         </section>
         <section>

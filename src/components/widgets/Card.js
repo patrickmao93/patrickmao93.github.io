@@ -3,69 +3,96 @@ import { Spring, config } from "react-spring";
 
 import Pill from "./Pill";
 
-const renderPills = pills => {
-  if (!pills) {
-    return;
-  }
-  return pills.map(pill => <Pill key={pill} type={pill} />);
-};
+class Card extends React.Component {
+  state = {
+    showPills: false
+  };
 
-const renderHeader = props => {
-  if (props.header) {
+  showPills() {
+    this.setState({ showPills: true });
+  }
+
+  hidePills() {
+    this.setState({ showPills: false });
+  }
+
+  renderPills() {
+    if (!this.props.pills) {
+      return;
+    }
     return (
-      <div className="card__title">
-        <h2>{props.header}</h2>
-        <div className="pills">{renderPills(props.pills)}</div>
-      </div>
+      <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        config={{ ...config.gentle }}
+      >
+        {props => (
+          <div className="pills" style={props}>
+            {this.props.pills.map(pill => (
+              <Pill key={pill} type={pill} />
+            ))}
+          </div>
+        )}
+      </Spring>
     );
   }
-};
 
-const renderImage = props => {
-  if (!props.imgUrl) {
-    return;
-  }
-  const ribbon = props.type && (
-    <div
-      className={`card__content__ribbon card__content__ribbon--${props.type}`}
-    >
-      {props.type}
-    </div>
-  );
-  return (
-    <>
-      <div className="card__content__img">
-        <img src={props.imgUrl} alt={props.header} />
-      </div>
-      {ribbon}
-    </>
-  );
-};
-
-const Card = p => {
-  let interactable = "";
-  if (p.interactable) {
-    interactable = "card--interactable";
+  renderHeader() {
+    if (this.props.header) {
+      return (
+        <div className="card__title">
+          <h3>{this.props.sub.toUpperCase()}</h3>
+          <h2>{this.props.header}</h2>
+        </div>
+      );
+    }
   }
 
-  return (
-    <Spring
-      from={{ opacity: 0 }}
-      to={{ opacity: 1 }}
-      config={{ delay: 150, ...config.gentle }}
-    >
-      {props => {
-        return (
-          <div className={`card ${interactable}`} style={props}>
-            <div className="card__content">
-              {renderImage(p)} {p.children}
+  renderImage() {
+    if (!this.props.imgUrl) {
+      return;
+    }
+    return (
+      <>
+        <div className="card__content__img">
+          <img src={this.props.imgUrl} alt={this.props.header} />
+
+          {this.state.showPills && this.renderPills(this.props.pills)}
+        </div>
+      </>
+    );
+  }
+
+  render() {
+    let interactable = "";
+    if (this.props.interactable) {
+      interactable = "card--interactable";
+    }
+
+    return (
+      <Spring
+        from={{ opacity: 0 }}
+        to={{ opacity: 1 }}
+        config={{ delay: 150, ...config.gentle }}
+      >
+        {props => {
+          return (
+            <div
+              onMouseEnter={() => this.showPills()}
+              onMouseLeave={() => this.hidePills()}
+              className={`card ${interactable}`}
+              style={props}
+            >
+              <div className="card__content">
+                {this.renderImage(this.props)} {this.props.children}
+              </div>
+              {this.renderHeader(this.props)}
             </div>
-            {renderHeader(p)}
-          </div>
-        );
-      }}
-    </Spring>
-  );
-};
+          );
+        }}
+      </Spring>
+    );
+  }
+}
 
 export default Card;

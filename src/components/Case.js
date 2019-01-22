@@ -6,6 +6,7 @@ import EmployeeDirectory from "./static/EmployeeDirectory";
 import ChartApp from "./static/ChartApp";
 import GuessThePhrase from "./static/GuessThePhrase";
 import Gallery from "./static/Gallery";
+import PortfolioSite from "./static/PortfolioSite";
 
 class Case extends React.Component {
   renderContent = () => {
@@ -20,6 +21,8 @@ class Case extends React.Component {
         return <GuessThePhrase />;
       case "a-responsive-photo-gallery":
         return <Gallery />;
+      case "portfolio-site":
+        return <PortfolioSite />;
 
       default:
         return;

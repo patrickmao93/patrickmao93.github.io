@@ -4,16 +4,19 @@ import Footer from "./Footer";
 import Viewport from "./Viewport";
 import Sidebar from "./Sidebar";
 import CaseProvider from "./providers/CaseProvider";
+import SocialMediaProvider from "./providers/SocialMediaProvider";
 
 const App = () => {
   return (
     <CaseProvider>
-      <div className="app">
-        <Header />
-        <Sidebar />
-        <Viewport />
-        <Footer />
-      </div>
+      <SocialMediaProvider>
+        <div className="app">
+          <Header />
+          <Sidebar />
+          <Viewport />
+          <Footer />
+        </div>
+      </SocialMediaProvider>
     </CaseProvider>
   );
 };

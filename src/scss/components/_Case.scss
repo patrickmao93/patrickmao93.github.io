@@ -1,28 +1,77 @@
 .case {
   @extend %page;
   &__header {
-    margin-bottom: 40px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid $color-border-primary;
+    overflow: hidden;
+    position: relative;
+    color: $color-font-inverse;
+    padding: 30px;
+    padding-bottom: 20px;
+    @include media("md") {
+      padding: 50px;
+      padding-bottom: 20px;
+    }
+    @include media("xl") {
+      padding: 70px;
+      padding-bottom: 20px;
+    }
+    &__background {
+      position: absolute;
+      top: -10%;
+      left: -10%;
+      width: 120%;
+      height: 120%;
+      background-size: cover;
+      background-position: center;
+      filter: blur(9px);
+
+      &--purdue {
+        filter: blur(9px) brightness(70%);
+        background-image: url("../media/images/banners/purdue-banner.jpg");
+      }
+      &--chart {
+        background-image: linear-gradient(135deg, #515274, #747abf);
+      }
+      &--ed {
+        background-image: linear-gradient(135deg, #8a8a8a, #e2e2e2);
+      }
+      &--gallery {
+        background-image: url("../media/images/banners/gallery-banner.jpg");
+      }
+      &--game {
+        background-image: linear-gradient(
+          -135deg,
+          rgb(60, 185, 255),
+          rgb(10, 129, 223)
+        );
+      }
+      &--portfolio {
+        background-image: linear-gradient(
+          135deg,
+          rgb(0, 123, 206),
+          rgb(24, 155, 241)
+        );
+      }
+    }
     h1 {
+      position: relative;
       font-size: 2rem;
       margin-bottom: 20px;
     }
     &__info {
+      position: relative;
       @include flex($dir: column, $align: flex-start);
       &__links {
         width: 100%;
         a {
+          color: $color-font-inverse;
+          font-size: 14px;
+          padding: 14px 18px;
+          background: $color-background-primary;
           text-align: center;
           line-height: 3;
           display: inline-block;
           width: 50%;
-        }
-        a:first-child {
-          border-right: 1px solid $color-border-primary;
-          @include media("md") {
-            border: none;
-          }
+          box-shadow: 0px 4px 16px rgba($color: #000000, $alpha: 0.4);
         }
       }
       @include media("md") {
@@ -42,12 +91,24 @@
     }
   }
   &__content {
+    @include media("md") {
+      padding: 50px 8%;
+      width: 100%;
+    }
+    @include media("lg") {
+      padding: 50px;
+      margin: auto;
+      margin-bottom: 50px;
+    }
+    @include media("xl") {
+      padding: 70px;
+    }
     section {
       margin-bottom: 60px;
     }
     h2 {
       font-size: 1.5rem;
-      margin: 20px 0;
+      margin-bottom: 20px;
       color: $color-font-primary;
     }
     &__list {

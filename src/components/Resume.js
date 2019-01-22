@@ -164,8 +164,10 @@ const Resume = () => {
                       <strong>MongoDB(Mongoose), MySQL</strong>
                     </li>
                     <li>
-                      Adept in front-end frameworks/libraries -{" "}
-                      <strong>React, Redux, Bootstrap, Materialize</strong>
+                      Adept in front-end technologies -{" "}
+                      <strong>
+                        React, Redux, Bootstrap, Materialize, Sass
+                      </strong>
                     </li>
                     <li>
                       Adept in back-end frameworks -{" "}

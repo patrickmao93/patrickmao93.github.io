@@ -2,6 +2,7 @@ import React from "react";
 
 import Pill from "./../widgets/Pill";
 import Card from "../widgets/Card";
+import Anchor from "./../widgets/Anchor";
 
 import lg from "../../media/images/proj5_1440x800.jpg";
 import md from "../../media/images/proj5_768x800.jpg";
@@ -12,6 +13,7 @@ const Gallery = () => {
   return (
     <div>
       <div className="case__header">
+        <div className="case__header__background case__header__background--gallery" />
         <h1>A Responsive Photo Gallery</h1>
         <div className="case__header__info">
           <div className="case__header__info__pills">
@@ -19,14 +21,14 @@ const Gallery = () => {
             <Pill type="jquery" />
           </div>
           <div className="case__header__info__links">
-            <a href="https://github.com/patrickmao93/techdegree-project-5">
+            <Anchor href="https://github.com/patrickmao93/techdegree-project-5">
               <i className="fab fa-github" />
               View on Github
-            </a>
-            <a href="https://patrickmao93.github.io/techdegree-project-5">
+            </Anchor>
+            <Anchor href="https://patrickmao93.github.io/techdegree-project-5">
               <i className="far fa-window-maximize" />
               Go to live page
-            </a>
+            </Anchor>
           </div>
         </div>
       </div>
@@ -35,9 +37,9 @@ const Gallery = () => {
           <h2>Summary</h2>
           <p className="case__content__paragraph">
             This was the project #5 of the{" "}
-            <a href="https://teamtreehouse.com/techdegree/front-end-web-development">
+            <Anchor href="https://teamtreehouse.com/techdegree/front-end-web-development">
               Treehouse Front End Web Development Techdegree
-            </a>
+            </Anchor>
             . <br />
             Mobile experience is not in scope of this project, so please view
             the page at desktop width. No library was used in this project. At

@@ -97,6 +97,7 @@
 
     .page {
       @extend %page;
+      padding: 60px;
       h2,
       h3 {
         margin-bottom: 10px;

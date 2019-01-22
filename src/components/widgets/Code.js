@@ -11,7 +11,7 @@ class Line extends React.Component {
 class Code extends React.Component {
   ref = React.createRef();
   componentDidMount() {
-    const spans = [...this.ref.current.children];
+    const spans = Array.prototype.slice.call(this.ref.current.children);
     for (let i = 0; i < spans.length; i++) {
       setTimeout(() => {
         spans[i].style.opacity = 0.4;

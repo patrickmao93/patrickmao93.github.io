@@ -6,7 +6,8 @@ import Anchor from "./../widgets/Anchor";
 
 import sm from "../../media/images/portfolio_425x800.jpg";
 import md from "../../media/images/portfolio_768x800.jpg";
-import xl from "../../media/images/portfolio_1440x800.jpg";
+import lg from "../../media/images/portfolio_1024x800.jpg";
+import full from "../../media/images/portfolio_full.jpg";
 
 const PorfolioSite = () => {
   return (
@@ -50,7 +51,8 @@ const PorfolioSite = () => {
           <div className="case__content__cards">
             <Card imgUrl={sm} />
             <Card imgUrl={md} />
-            <Card imgUrl={xl} />
+            <Card imgUrl={lg} />
+            <Card imgUrl={full} />
           </div>
         </section>
       </div>

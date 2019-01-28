@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Spring } from "react-spring";
 
 import Code from "./widgets/Code";
+import patrick from "../media/images/patrick.jpg";
 
 class Intro extends React.Component {
   renderSpring = () => {
@@ -37,7 +38,11 @@ class Intro extends React.Component {
           to={{ opacity: 1 }}
           config={{ delay: 1000 }}
         >
-          {props => <div className="intro__content__img" />}
+          {props => (
+            <div className="intro__content__img">
+              <img src={patrick} alt="patrick" />
+            </div>
+          )}
         </Spring>
         <div className="intro__content__desc">
           <h1>

@@ -20,8 +20,15 @@
       flex-direction: row;
     }
     &__img {
+      border: 10px solid white;
+      box-shadow: $box-shadow-lg;
       border-radius: 40px;
       @include img(200px, 200px);
+      @include flex($just: center);
+      img {
+        width: 120%;
+        height: auto;
+      }
     }
     &__desc {
       margin-top: 20px;

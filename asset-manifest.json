@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.c0401616.chunk.css",
-  "main.js": "/static/js/main.e9d539ab.chunk.js",
-  "main.js.map": "/static/js/main.e9d539ab.chunk.js.map",
+  "main.js": "/static/js/main.93e9be36.chunk.js",
+  "main.js.map": "/static/js/main.93e9be36.chunk.js.map",
   "static/js/1.82279bf6.chunk.js": "/static/js/1.82279bf6.chunk.js",
   "static/js/1.82279bf6.chunk.js.map": "/static/js/1.82279bf6.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -29,7 +29,7 @@
   "static/media/proj8_1440x800_1.jpg": "/static/media/proj8_1440x800_1.a729b109.jpg",
   "static/media/proj8_1024x800_2.jpg": "/static/media/proj8_1024x800_2.5cdae40c.jpg",
   "static/media/proj8_576x320.jpg": "/static/media/proj8_576x320.523bf8ee.jpg",
-  "static/media/QizhengMao_Intermediate_Resume.docx": "/static/media/QizhengMao_Intermediate_Resume.fd65fe0a.docx",
+  "static/media/QizhengMao_Font-end_Junior.docx": "/static/media/QizhengMao_Font-end_Junior.2519729a.docx",
   "static/media/proj6_576x320.jpg": "/static/media/proj6_576x320.2a62cd05.jpg",
   "static/media/proj5_576x320.jpg": "/static/media/proj5_576x320.b82c4dbb.jpg",
   "static/media/cco_576x320.jpg": "/static/media/cco_576x320.cd6b20f2.jpg",
@@ -41,6 +41,6 @@
   "static/media/index.css": "/static/media/segoeui.3922dbc6.ttf",
   "static/css/main.c0401616.chunk.css.map": "/static/css/main.c0401616.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.4eac46801047c1f38fe568630f9817b9.js": "/precache-manifest.4eac46801047c1f38fe568630f9817b9.js",
+  "precache-manifest.fb14a20d6a7812008619ffd8a6e8243b.js": "/precache-manifest.fb14a20d6a7812008619ffd8a6e8243b.js",
   "service-worker.js": "/service-worker.js"
 }

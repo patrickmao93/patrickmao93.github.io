@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/static/media/portfolio_full.67871df6.jpg"
   },
   {
-    "revision": "e9d539abaf00549aed13",
+    "revision": "93e9be36bd2f9b874c0f",
     "url": "/static/css/main.c0401616.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/static/media/patrick.0736855c.jpg"
   },
   {
-    "revision": "fd65fe0a69e2f6c67f9d8d16ba69e266",
-    "url": "/static/media/QizhengMao_Intermediate_Resume.fd65fe0a.docx"
+    "revision": "2519729af0a50f7b1ca0fe042079d5fc",
+    "url": "/static/media/QizhengMao_Font-end_Junior.2519729a.docx"
   },
   {
     "revision": "0c092f441678cccaf07f1f11c065fd47",
@@ -80,8 +80,8 @@ self.__precacheManifest = [
     "url": "/static/media/portfolio_1024x800.465b81ca.jpg"
   },
   {
-    "revision": "e9d539abaf00549aed13",
-    "url": "/static/js/main.e9d539ab.chunk.js"
+    "revision": "93e9be36bd2f9b874c0f",
+    "url": "/static/js/main.93e9be36.chunk.js"
   },
   {
     "revision": "ef602e2a6ee6c9e7c3e736d7d2709ea7",
@@ -160,7 +160,7 @@ self.__precacheManifest = [
     "url": "/static/media/segoeui.3922dbc6.ttf"
   },
   {
-    "revision": "3b24785808a4cab620050bfcc6c30a9d",
+    "revision": "24d430be2a408cf7d4c75637cca59bca",
     "url": "/index.html"
   }
 ];

@@ -1030,6 +1030,9 @@ i.colored.fa-node-js {
 .case__header__background--gallery {
   background-image: url("../media/images/banners/gallery-banner.jpg");
 }
+.case__header__background--kanban {
+  background-image: linear-gradient(-135deg, #036f73, #038387);
+}
 .case__header__background--game {
   background-image: linear-gradient(-135deg, #3cb9ff, #0a81df);
 }

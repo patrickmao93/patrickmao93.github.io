@@ -8,6 +8,7 @@ import guessThePhrasejpg from "../../media/images/thumbnails/proj6_576x320.jpg";
 import galleryjpg from "../../media/images/thumbnails/proj5_576x320.jpg";
 import ccojpg from "../../media/images/thumbnails/cco_576x320.jpg";
 import portfoliojpg from "../../media/images/thumbnails/portfolio_576x320.jpg";
+import kanbanjpg from "../../media/images/thumbnails/kanban.jpg";
 
 class CaseProvider extends React.Component {
   state = {
@@ -76,16 +77,19 @@ class CaseProvider extends React.Component {
         icon: "fas fa-folder",
         closable: true
       }
+    },
+    ultimateKanban: {
+      header: "Ultimate-Kanban",
+      sub: "Personal Project",
+      imgUrl: kanbanjpg,
+      tabInfo: {
+        name: "Ultimate-Kanban",
+        to: "/portfolio/ultimate-kanban",
+        icon: "fas fa-folder",
+        closable: true
+      }
     }
   };
-
-  componentDidMount() {
-    //preload all images when provider mounts
-    // for (const page in this.state) {
-    //   const img = new Image();
-    //   img.src = this.state[page].imgUrl;
-    // }
-  }
 
   render() {
     return (

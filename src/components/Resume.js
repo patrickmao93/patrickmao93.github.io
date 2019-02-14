@@ -8,7 +8,7 @@ const Resume = () => {
     <div className="resume">
       <div className="resume__header">
         <h1>Qizheng Mao (Patrick)</h1>
-        <h3>Full-Stack Web Developer</h3>
+        <h3>Front-end Web Developer</h3>
         <section className="resume__header__section">
           <span className="resume__header__section__info">
             <i className="fas fa-envelope" />
@@ -55,27 +55,26 @@ const Resume = () => {
                 </a>
               </div>
               <section className="page__section">
-                <h1>Work Experience</h1>
+                <h1>Related Experience</h1>
                 <section>
-                  <h3 className="page__section__date">OCT 2017 - MAR 2018</h3>
-                  <h2>Industrial Designer - LED light fixture designer</h2>
+                  <h3 className="page__section__date">JAN 2019 - JAN 2019</h3>
+                  <h2>React/Redux Kanban App</h2>
                   <div className="page__section__info">
                     <h3>
-                      <span className="company">Suzhou Powerhouse LLC.</span>,
-                      Suzhou, China
+                      <span className="company">Personal Project</span>
                     </h3>
                     <ul>
                       <li>
-                        Generate 3D design renderings based on client's
-                        concept/idea
+                        Translated Trello design into my own working prototype
                       </li>
                       <li>
-                        Design product structure, and create 3D printed
-                        prototypes
+                        Built resuable and composable components by utilizing
+                        ES6 Static method
                       </li>
-                      <li>Convert design into CAD drawings for production</li>
+                      <li>Wrote test for components using Enzyme</li>
                       <li>
-                        Amend existing designs for changes engineering solutions
+                        Separated data and UI states for better controls over
+                        what should be saved in client
                       </li>
                     </ul>
                   </div>
@@ -156,12 +155,8 @@ const Resume = () => {
                       <strong>Git</strong>
                     </li>
                     <li>
-                      Proficient with workflow tools -{" "}
+                      Proficient with front-end workflow tools -{" "}
                       <strong>webpack, gulp, npm, grunt</strong>
-                    </li>
-                    <li>
-                      Adept at working with databases -{" "}
-                      <strong>MongoDB(Mongoose), MySQL</strong>
                     </li>
                     <li>
                       Adept in front-end technologies -{" "}
@@ -170,8 +165,8 @@ const Resume = () => {
                       </strong>
                     </li>
                     <li>
-                      Adept in back-end frameworks -{" "}
-                      <strong>Express, ASP.NET MVC</strong>
+                      Adept at working with databases and REST API -{" "}
+                      <strong>MongoDB(Mongoose), MySQL</strong>
                     </li>
                     <li>
                       Adept at adopting TDD/BDD principles; adept in testing
@@ -185,7 +180,8 @@ const Resume = () => {
                       Experience in doing code review and pair programming
                     </li>
                     <li>
-                      Familiar with <strong>A/B testing</strong>
+                      Familiar with back-end frameworks -{" "}
+                      <strong>Express, ASP.NET MVC</strong>
                     </li>
                     <li>Keen understanding of UI/UX design</li>
                   </ul>

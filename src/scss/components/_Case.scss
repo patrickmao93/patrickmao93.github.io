@@ -37,6 +37,9 @@
       &--gallery {
         background-image: url("../media/images/banners/gallery-banner.jpg");
       }
+      &--kanban {
+        background-image: linear-gradient(-135deg, #036f73, #038387);
+      }
       &--game {
         background-image: linear-gradient(
           -135deg,

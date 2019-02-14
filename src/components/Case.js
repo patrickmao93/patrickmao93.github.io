@@ -2,27 +2,27 @@ import React from "react";
 import { Spring } from "react-spring";
 
 import CCO from "./static/CCO";
-import EmployeeDirectory from "./static/EmployeeDirectory";
+import Kanban from "./static/Kanban";
 import ChartApp from "./static/ChartApp";
 import GuessThePhrase from "./static/GuessThePhrase";
-import Gallery from "./static/Gallery";
 import PortfolioSite from "./static/PortfolioSite";
+import EmployeeDirectory from "./static/EmployeeDirectory";
 
 class Case extends React.Component {
   renderContent = () => {
     switch (this.props.match.params.name) {
       case "cco":
         return <CCO />;
-      case "employee-directory":
-        return <EmployeeDirectory />;
+      case "ultimate-kanban":
+        return <Kanban />;
       case "chart-app":
         return <ChartApp />;
       case "guess-the-phrase":
         return <GuessThePhrase />;
-      case "a-responsive-photo-gallery":
-        return <Gallery />;
       case "portfolio-site":
         return <PortfolioSite />;
+      case "employee-directory":
+        return <EmployeeDirectory />;
 
       default:
         return;

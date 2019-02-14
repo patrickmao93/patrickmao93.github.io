@@ -12,6 +12,21 @@ const Portfolio = props => {
         return (
           <div className="portfolio">
             <Link
+              to={state.ultimateKanban.tabInfo.to}
+              className="link-card"
+              onClick={() => props.onClickCase(state.ultimateKanban.tabInfo)}
+            >
+              <Card
+                header={state.ultimateKanban.header}
+                sub={state.ultimateKanban.sub}
+                imgUrl={state.ultimateKanban.imgUrl}
+                interactable={true}
+                type="Personal"
+                pills={["react", "redux", "js", "sass"]}
+              />
+            </Link>
+
+            <Link
               to={state.portfolio.tabInfo.to}
               className="link-card"
               onClick={() => props.onClickCase(state.portfolio.tabInfo)}
@@ -89,21 +104,6 @@ const Portfolio = props => {
                 interactable={true}
                 type="Personal"
                 pills={["js"]}
-              />
-            </Link>
-
-            <Link
-              to={state.photoGallery.tabInfo.to}
-              className="link-card"
-              onClick={() => props.onClickCase(state.photoGallery.tabInfo)}
-            >
-              <Card
-                header={state.photoGallery.header}
-                sub={state.photoGallery.sub}
-                imgUrl={state.photoGallery.imgUrl}
-                interactable={true}
-                type="Personal"
-                pills={["js", "jquery"]}
               />
             </Link>
           </div>

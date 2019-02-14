@@ -1,7 +1,7 @@
 import React from "react";
 import { Spring } from "react-spring";
 
-import resumeDoc from "../QizhengMao_Intermediate_Resume.docx";
+import resumeDoc from "../QizhengMao_Font-end_Junior.docx";
 
 const Resume = () => {
   return (
@@ -25,7 +25,7 @@ const Resume = () => {
         </section>
         <section className="resume__header__section">
           <p>
-            Self-driven web developer, user interface fanatic. 2 years of
+            Self-driven web developer, user interface fanatic. 1 year of
             experience in web development and looking for more. Seek to secure a
             position of font-end or full-stack development role.
           </p>

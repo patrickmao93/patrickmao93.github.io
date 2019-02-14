@@ -97,7 +97,13 @@
 
     .page {
       @extend %page;
-      padding: 60px;
+      padding: 30px 20px;
+      @include media("md") {
+        padding: 40px 30px;
+      }
+      @include media("lg") {
+        padding: 60px;
+      }
       h2,
       h3 {
         margin-bottom: 10px;

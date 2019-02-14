@@ -4,8 +4,6 @@
     overflow: hidden;
     position: relative;
     color: $color-font-inverse;
-    padding: 30px;
-    padding-bottom: 20px;
     @include media("md") {
       padding: 50px;
       padding-bottom: 20px;
@@ -58,11 +56,15 @@
     h1 {
       position: relative;
       font-size: 2rem;
-      margin-bottom: 20px;
+      padding: 10px;
+      margin-top: 20px;
     }
     &__info {
       position: relative;
       @include flex($dir: column, $align: flex-start);
+      &__pills {
+        margin: 20px 10px;
+      }
       &__links {
         width: 100%;
         a {
@@ -94,6 +96,7 @@
     }
   }
   &__content {
+    padding: 30px 20px;
     @include media("md") {
       padding: 50px 8%;
       width: 100%;

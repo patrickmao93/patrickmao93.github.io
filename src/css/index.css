@@ -837,7 +837,17 @@ i.colored.fa-node-js {
   }
 }
 .resume__scroll .page {
-  padding: 60px;
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  .resume__scroll .page {
+    padding: 40px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .resume__scroll .page {
+    padding: 60px;
+  }
 }
 .resume__scroll .page h2,
 .resume__scroll .page h3 {
@@ -992,8 +1002,6 @@ i.colored.fa-node-js {
   overflow: hidden;
   position: relative;
   color: white;
-  padding: 30px;
-  padding-bottom: 20px;
 }
 @media (min-width: 768px) {
   .case__header {
@@ -1042,7 +1050,8 @@ i.colored.fa-node-js {
 .case__header h1 {
   position: relative;
   font-size: 2rem;
-  margin-bottom: 20px;
+  padding: 10px;
+  margin-top: 20px;
 }
 .case__header__info {
   position: relative;
@@ -1051,6 +1060,9 @@ i.colored.fa-node-js {
   justify-content: flex-start;
   flex-wrap: nowrap;
   align-items: flex-start;
+}
+.case__header__info__pills {
+  margin: 20px 10px;
 }
 .case__header__info__links {
   width: 100%;
@@ -1080,6 +1092,9 @@ i.colored.fa-node-js {
     width: auto;
     margin-right: 20px;
   }
+}
+.case__content {
+  padding: 30px 20px;
 }
 @media (min-width: 768px) {
   .case__content {
@@ -1251,7 +1266,17 @@ i.colored.fa-node-js {
   }
 }
 .resume__scroll .page {
-  padding: 60px;
+  padding: 30px 20px;
+}
+@media (min-width: 768px) {
+  .resume__scroll .page {
+    padding: 40px 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .resume__scroll .page {
+    padding: 60px;
+  }
 }
 .resume__scroll .page h2,
 .resume__scroll .page h3 {
